@@ -1,0 +1,943 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f4\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Times;}
+{\f5\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Helvetica;}{\f6\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Courier;}{\f7\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Geneva;}
+{\f8\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Tms Rmn{\*\falt Times New Roman};}{\f9\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Helv{\*\falt Arial};}{\f10\froman\fcharset0\fprq2{\*\panose 00000000000000000000}MS Serif;}
+{\f11\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}MS Sans Serif;}{\f12\froman\fcharset0\fprq2{\*\panose 00000000000000000000}New York;}{\f13\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}System;}
+{\f14\fnil\fcharset2\fprq2{\*\panose 05000000000000000000}Wingdings;}{\f15\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Tahoma;}{\f16\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}Marlett;}
+{\f17\fswiss\fcharset0\fprq2{\*\panose 020b0706040902060204}Haettenschweiler;}{\f18\froman\fcharset2\fprq2{\*\panose 05050102010205020202}MT Extra;}{\f19\fswiss\fcharset0\fprq2{\*\panose 020b0506020202030204}Arial Narrow;}
+{\f20\fswiss\fcharset0\fprq2{\*\panose 020b0a04020102020204}Arial Black;}{\f21\froman\fcharset0\fprq2{\*\panose 02050604050505020204}Bookman Old Style;}{\f22\fnil\fcharset2\fprq2{\*\panose 01010601010101010101}Monotype Sorts;}
+{\f23\froman\fcharset0\fprq2{\*\panose 00050102010706020507}Map Symbols;}{\f24\froman\fcharset0\fprq2{\*\panose 02020404030301010803}Garamond;}{\f25\fswiss\fcharset0\fprq2{\*\panose 020b0806030902050204}Impact;}
+{\f26\fscript\fcharset0\fprq2{\*\panose 030f0702030302020204}Comic Sans MS;}{\f27\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Verdana;}{\f28\froman\fcharset2\fprq2{\*\panose 05030102010509060703}Webdings;}
+{\f29\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}AvantGarde;}{\f30\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Bookman;}{\f31\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Helvetica-Narrow;}
+{\f32\froman\fcharset0\fprq2{\*\panose 00000000000000000000}NewCenturySchlbk;}{\f33\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Palatino;}{\f34\froman\fcharset0\fprq2{\*\panose 00000000000000000000}ZapfChancery;}
+{\f35\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}ZapfDingbats;}{\f36\fmodern\fcharset255\fprq2{\*\panose 00000000000000000000}Modern;}{\f37\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Anna;}
+{\f38\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Poppl-Laudatio Regular;}{\f39\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Boulevard;}{\f40\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Roman;}
+{\f41\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Boton Regular;}{\f42\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM_100 LT 850 EX;}{\f43\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM_240 RG 250 CN;}
+{\f44\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM;}{\f45\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM_240 RG 850 EX;}{\f46\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM_503 BD 250 CN;}
+{\f47\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM_503 BD 488 NO;}{\f48\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM_503 BD 850 EX;}{\f49\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Baskerville BE Regular;}
+{\f50\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Giddyup Thangs;}{\f51\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Giddyup;}{\f52\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM_100 LT 250 CN;}
+{\f53\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM_100 LT 564 NO;}{\f54\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Arial Rounded MT Bold;}{\f55\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Book Antiqua;}
+{\f56\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Century Gothic;}{\f57\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Century Schoolbook;}{\f58\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Algerian;}
+{\f59\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Braggadocio;}{\f60\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Britannic Bold;}{\f61\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Brush Script MT;}
+{\f62\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Colonna MT;}{\f63\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Desdemona;}{\f64\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Footlight MT Light;}
+{\f65\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Kino MT;}{\f66\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Wide Latin;}{\f67\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Matura MT Script Capitals;}
+{\f68\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Playbill;}{\f69\fmodern\fcharset2\fprq1{\*\panose 00000000000000000000}MS LineDraw;}{\f70\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Cheltenhm BT;}
+{\f71\fnil\fcharset0\fprq2{\*\panose 00000000000000000000}DearMomUS;}{\f72\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Keystone;}{\f73\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Lucia BT;}
+{\f74\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Vivante-DTC;}{\f75\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Albertus (W1);}{\f76\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Albertus Xb (W1);}
+{\f77\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Antique Olv (W1);}{\f78\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}CG Omega (W1);}{\f79\froman\fcharset0\fprq2{\*\panose 00000000000000000000}CG Times (W1);}
+{\f80\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Clarendon Cd (W1);}{\f81\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Coronet (W1);}{\f82\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Courier (W1);}
+{\f83\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Garmond (W1);}{\f84\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}Letter Gothic (W1);}{\f85\fmodern\fcharset0\fprq1{\*\panose 00000000000000000000}LinePrinter;}
+{\f86\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Marigold (W1);}{\f87\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Univers (W1);}{\f88\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Univers Cd (W1);}
+{\f89\fswiss\fcharset0\fprq1{\*\panose 00000000000000000000}MS Dialog;}{\f90\fnil\fcharset0\fprq2{\*\panose 00000000000000000000}Bodoni-DTC;}{\f91\fnil\fcharset0\fprq2{\*\panose 00000000000000000000}Dom Casual;}
+{\f92\fnil\fcharset0\fprq2{\*\panose 00000000000000000000}Fette Engschrift;}{\f93\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Franklin Cond. Gothic;}{\f94\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Franklin Gothic;}
+{\f95\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Garrison Cond. Sans;}{\f96\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Garrison ExtraBold Sans;}{\f97\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Garrison ExtraCond. Sans;}
+{\f98\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Garrison Light Sans;}{\f99\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Garrison Sans;}{\f100\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Goudy Old Style;}
+{\f101\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Kauflinn;}{\f102\fnil\fcharset0\fprq2{\*\panose 00000000000000000000}Optimum;}{\f103\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}VAG Round;}
+{\f104\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Village Square;}{\f105\fdecor\fcharset0\fprq2{\*\panose 00000000000000000000}Windsor;}{\f106\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}TektoMM_240 RG 564 NO;}
+{\f107\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Times Roman;}{\f108\fnil\fcharset0\fprq2{\*\panose 00000000000000000000}Fences;}{\f109\froman\fcharset2\fprq2{\*\panose 00000000000000000000}Symbol Set SWA;}
+{\f110\fmodern\fcharset2\fprq1{\*\panose 00000000000000000000}OCR-B-10 BT;}{\f111\fscript\fcharset0\fprq2{\*\panose 00000000000000000000}Monotype Corsiva;}{\f112\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}MS Reference 1;}
+{\f113\fnil\fcharset2\fprq2{\*\panose 00000000000000000000}MS Reference 2;}{\f114\fscript\fcharset255\fprq2{\*\panose 00000000000000000000}Script;}{\f115\froman\fcharset0\fprq2{\*\panose 00000000000000000000}Dutch SWA;}
+{\f116\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Geometr415 Md BT;}{\f117\froman\fcharset0\fprq2{\*\panose 00000000000000000000}ItalianGarmnd BT;}{\f118\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Swis721 Blk BT;}
+{\f119\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Swis721 Lt BT;}{\f120\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Swiss SWA;}{\f121\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}SwissNarrow SWA;}
+{\f122\froman\fcharset0\fprq2{\*\panose 00000000000000000000}ZapfCallig SWA;}{\f123\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Optima;}{\f124\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Sans;}
+{\f125\fmodern\fcharset0\fprq1{\*\panose 020b0609040504020204}Lucida Console;}{\f126\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Bookshelf Symbol 3;}{\f127\fswiss\fcharset2\fprq2{\*\panose 050b0604020202020204}Bookshelf Symbol 4;}
+{\f128\fnil\fcharset2\fprq2{\*\panose 05010101010101010101}Bookshelf Symbol 5;}{\f129\froman\fcharset238\fprq2 Times New Roman CE;}{\f130\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f132\froman\fcharset161\fprq2 Times New Roman Greek;}
+{\f133\froman\fcharset162\fprq2 Times New Roman Tur;}{\f134\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f135\fswiss\fcharset238\fprq2 Arial CE;}{\f136\fswiss\fcharset204\fprq2 Arial Cyr;}{\f138\fswiss\fcharset161\fprq2 Arial Greek;}
+{\f139\fswiss\fcharset162\fprq2 Arial Tur;}{\f140\fswiss\fcharset186\fprq2 Arial Baltic;}{\f141\fmodern\fcharset238\fprq1 Courier New CE;}{\f142\fmodern\fcharset204\fprq1 Courier New Cyr;}{\f144\fmodern\fcharset161\fprq1 Courier New Greek;}
+{\f145\fmodern\fcharset162\fprq1 Courier New Tur;}{\f146\fmodern\fcharset186\fprq1 Courier New Baltic;}{\f219\fswiss\fcharset238\fprq2 Tahoma CE;}{\f220\fswiss\fcharset204\fprq2 Tahoma Cyr;}{\f222\fswiss\fcharset161\fprq2 Tahoma Greek;}
+{\f223\fswiss\fcharset162\fprq2 Tahoma Tur;}{\f224\fswiss\fcharset186\fprq2 Tahoma Baltic;}{\f243\fswiss\fcharset238\fprq2 Arial Narrow CE;}{\f244\fswiss\fcharset204\fprq2 Arial Narrow Cyr;}{\f246\fswiss\fcharset161\fprq2 Arial Narrow Greek;}
+{\f247\fswiss\fcharset162\fprq2 Arial Narrow Tur;}{\f248\fswiss\fcharset186\fprq2 Arial Narrow Baltic;}{\f249\fswiss\fcharset238\fprq2 Arial Black CE;}{\f250\fswiss\fcharset204\fprq2 Arial Black Cyr;}{\f252\fswiss\fcharset161\fprq2 Arial Black Greek;}
+{\f253\fswiss\fcharset162\fprq2 Arial Black Tur;}{\f254\fswiss\fcharset186\fprq2 Arial Black Baltic;}{\f255\froman\fcharset238\fprq2 Bookman Old Style CE;}{\f256\froman\fcharset204\fprq2 Bookman Old Style Cyr;}
+{\f258\froman\fcharset161\fprq2 Bookman Old Style Greek;}{\f259\froman\fcharset162\fprq2 Bookman Old Style Tur;}{\f260\froman\fcharset186\fprq2 Bookman Old Style Baltic;}{\f273\froman\fcharset238\fprq2 Garamond CE;}
+{\f274\froman\fcharset204\fprq2 Garamond Cyr;}{\f276\froman\fcharset161\fprq2 Garamond Greek;}{\f277\froman\fcharset162\fprq2 Garamond Tur;}{\f278\froman\fcharset186\fprq2 Garamond Baltic;}{\f279\fswiss\fcharset238\fprq2 Impact CE;}
+{\f280\fswiss\fcharset204\fprq2 Impact Cyr;}{\f282\fswiss\fcharset161\fprq2 Impact Greek;}{\f283\fswiss\fcharset162\fprq2 Impact Tur;}{\f284\fswiss\fcharset186\fprq2 Impact Baltic;}{\f285\fscript\fcharset238\fprq2 Comic Sans MS CE;}
+{\f286\fscript\fcharset204\fprq2 Comic Sans MS Cyr;}{\f288\fscript\fcharset161\fprq2 Comic Sans MS Greek;}{\f289\fscript\fcharset162\fprq2 Comic Sans MS Tur;}{\f290\fscript\fcharset186\fprq2 Comic Sans MS Baltic;}
+{\f291\fswiss\fcharset238\fprq2 Verdana CE;}{\f292\fswiss\fcharset204\fprq2 Verdana Cyr;}{\f294\fswiss\fcharset161\fprq2 Verdana Greek;}{\f295\fswiss\fcharset162\fprq2 Verdana Tur;}{\f296\fswiss\fcharset186\fprq2 Verdana Baltic;}
+{\f879\fmodern\fcharset238\fprq1 Lucida Console CE;}{\f880\fmodern\fcharset204\fprq1 Lucida Console Cyr;}{\f882\fmodern\fcharset161\fprq1 Lucida Console Greek;}{\f883\fmodern\fcharset162\fprq1 Lucida Console Tur;}}{\colortbl;\red0\green0\blue0;
+\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;
+\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\adjustright \fs20 \snext0 Normal;}{\s1\sb240\nowidctlpar\adjustright \b\f9\ul \sbasedon0 \snext0 heading 1;}{
+\s2\sb120\nowidctlpar\adjustright \b\f9 \sbasedon0 \snext0 heading 2;}{\s3\li360\nowidctlpar\adjustright \b \sbasedon0 \snext17 heading 3;}{\s4\li360\nowidctlpar\adjustright \ul \sbasedon0 \snext17 heading 4;}{\s5\li720\nowidctlpar\adjustright \b\fs20 
+\sbasedon0 \snext17 heading 5;}{\s6\li720\nowidctlpar\adjustright \fs20\ul \sbasedon0 \snext17 heading 6;}{\s7\li720\nowidctlpar\adjustright \i\fs20 \sbasedon0 \snext17 heading 7;}{\s8\li720\nowidctlpar\adjustright \i\fs20 \sbasedon0 \snext17 heading 8;}{
+\s9\li720\nowidctlpar\adjustright \i\fs20 \sbasedon0 \snext17 heading 9;}{\*\cs10 \additive Default Paragraph Font;}{\*\cs15 \additive \f8\fs16\up6\lang1033 \sbasedon10 footnote reference;}{\s16\nowidctlpar\adjustright \fs20 \sbasedon0 \snext16 
+footnote text;}{\s17\li720\nowidctlpar\adjustright \fs20 \sbasedon0 \snext17 Normal Indent;}{\s18\fi-240\li480\sb80\nowidctlpar\tx480\adjustright \f5 \sbasedon0 \snext18 nscba;}{\s19\fi-240\li240\sa20\nowidctlpar\adjustright \f5 \sbasedon0 \snext19 j;}{
+\s20\li480\sa20\nowidctlpar\adjustright \f5 \sbasedon0 \snext20 ij;}{\s21\sb80\sa20\nowidctlpar\adjustright \f5 \sbasedon0 \snext21 btb;}{\s22\fi-240\li2400\sb20\sa20\nowidctlpar\adjustright \f5\fs20 \sbasedon0 \snext22 ctcb;}{
+\s23\fi-240\li480\sa40\nowidctlpar\tx480\adjustright \f5 \sbasedon0 \snext23 ns;}{\s24\sa120\nowidctlpar\adjustright \f5\fs28 \sbasedon0 \snext24 TT;}{\s25\fi-240\li2400\sa20\nowidctlpar\adjustright \f5 \sbasedon0 \snext25 crtj;}{
+\s26\fi-240\li480\nowidctlpar\tx480\adjustright \f5 \sbasedon0 \snext26 nsca;}{\s27\sa20\nowidctlpar\adjustright \f5 \sbasedon0 \snext27 bt;}{\s28\li240\sb120\sa40\nowidctlpar\adjustright \f5 \sbasedon0 \snext28 Hf;}{
+\s29\li240\sb120\sa40\nowidctlpar\adjustright \f5 \sbasedon0 \snext29 Hs;}{\s30\li480\sb120\sa40\nowidctlpar\adjustright \f5 \sbasedon0 \snext30 RT;}{\s31\fi-2160\li2160\sb240\sa80\nowidctlpar\tx2160\adjustright \f5 \sbasedon0 \snext31 c;}{
+\s32\li2160\sa20\nowidctlpar\adjustright \f5 \sbasedon0 \snext32 ct;}{\s33\li240\sa20\nowidctlpar\adjustright \f5 \sbasedon0 \snext33 it;}{\s34\li480\nowidctlpar\adjustright \f5\fs20 \sbasedon0 \snext34 nsct;}{
+\s35\fi-160\li400\sb80\sa40\nowidctlpar\adjustright \f5 \sbasedon0 \snext35 nscb;}{\s36\fi-2640\li2880\sb120\sa40\nowidctlpar\brdrb\brdrs\brdrw15 \brdrbtw\brdrs\brdrw15 \tx2880\adjustright \f5 \sbasedon0 \snext36 HC2;}{
+\s37\fi-2640\li2880\sb120\sa20\nowidctlpar\tx2880\adjustright \f5 \sbasedon0 \snext37 C2;}{\s38\fi-240\li2400\sa20\nowidctlpar\adjustright \f5\fs20 \sbasedon0 \snext38 ctc;}{\s39\li2160\sb160\nowidctlpar\adjustright \f5 \sbasedon0 \snext39 crt;}{
+\s40\li480\sb20\sa40\nowidctlpar\adjustright \f5 \sbasedon0 \snext40 or;}{\s41\fi-259\li360\sb40\sa40\nowidctlpar\tx360\adjustright \f11\fs20 \sbasedon0 \snext41 Ln1;}{\s42\li115\sb80\sa80\nowidctlpar\adjustright \f11\fs20 \sbasedon0 \snext0 *Intro;}{
+\s43\li115\sb80\sa80\keepn\nowidctlpar\adjustright \b\f11 \sbasedon3 \snext42 *Title;}{\s44\fi-245\li360\sb80\nowidctlpar\adjustright \f11\fs20 \snext44 *Jl;}{\s45\li360\sb40\sa40\nowidctlpar\adjustright \f11\fs20 \snext0 Lp1;}{
+\s46\fi-1800\li1915\sb60\sl-240\slmult1\nowidctlpar\tx1915\adjustright \f11\fs20 \sbasedon0 \snext46 Tph;}{\s47\li115\sb120\sa80\nowidctlpar\adjustright \b\f11\fs20 \snext41 Proch;}{\*\cs48 \additive \super \sbasedon10 endnote reference;}{
+\s49\widctlpar\adjustright \b\fs20 \sbasedon0 \snext49 Body Text;}}{\*\listtable{\list\listtemplateid-1\listsimple{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01*;}{\levelnumbers;}}{\listname ;}\listid-2}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid58481330}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid156894312}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid168981677}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid344599507}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid352657800}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid416097355}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid527304419}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid607199111}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid746456765}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid780144442}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid840197187}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid896476105}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid929504412}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1045790026}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1061638669}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1111167754}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1359234163}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1484783983}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1522889866}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1557888570}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1603797790}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1618752343}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1690720171}
+{\list\listtemplateid67698689\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1697542301}
+{\list\listtemplateid-1125217442\listsimple{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent283{\leveltext\'02\'00.;}{\levelnumbers\'01;}\fi-283\li283 }{\listname ;}\listid1967736445}{\list\listtemplateid67698689
+\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1998485804}{\list\listtemplateid67698689\listsimple
+{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid2076009699}{\list\listtemplateid67698689\listsimple{\listlevel
+\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid2104062028}}{\*\listoverridetable{\listoverride\listid1967736445
+\listoverridecount0\ls1}{\listoverride\listid-2\listoverridecount1{\lfolevel\listoverrideformat{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent283{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 
+\fi-283\li283 }}\ls2}{\listoverride\listid-2\listoverridecount1{\lfolevel\listoverrideformat{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelold\levelspace0\levelindent283{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\b0\i0\f3\fs20\fbias0 
+\fi-283\li283 }}\ls3}{\listoverride\listid168981677\listoverridecount0\ls4}{\listoverride\listid1697542301\listoverridecount0\ls5}{\listoverride\listid352657800\listoverridecount0\ls6}{\listoverride\listid607199111\listoverridecount0\ls7}
+{\listoverride\listid896476105\listoverridecount0\ls8}{\listoverride\listid527304419\listoverridecount0\ls9}{\listoverride\listid1690720171\listoverridecount0\ls10}{\listoverride\listid58481330\listoverridecount0\ls11}{\listoverride\listid416097355
+\listoverridecount0\ls12}{\listoverride\listid2076009699\listoverridecount0\ls13}{\listoverride\listid840197187\listoverridecount0\ls14}{\listoverride\listid780144442\listoverridecount0\ls15}{\listoverride\listid1557888570\listoverridecount0\ls16}
+{\listoverride\listid1522889866\listoverridecount0\ls17}{\listoverride\listid344599507\listoverridecount0\ls18}{\listoverride\listid2104062028\listoverridecount0\ls19}{\listoverride\listid1359234163\listoverridecount0\ls20}{\listoverride\listid929504412
+\listoverridecount0\ls21}{\listoverride\listid1061638669\listoverridecount0\ls22}{\listoverride\listid1998485804\listoverridecount0\ls23}{\listoverride\listid1618752343\listoverridecount0\ls24}{\listoverride\listid1484783983\listoverridecount0\ls25}
+{\listoverride\listid1045790026\listoverridecount0\ls26}{\listoverride\listid1603797790\listoverridecount0\ls27}{\listoverride\listid1111167754\listoverridecount0\ls28}{\listoverride\listid156894312\listoverridecount0\ls29}{\listoverride\listid746456765
+\listoverridecount0\ls30}}{\info{\title AFXCORE}{\subject MFC Core RTF Help}{\author AFX}{\operator Don Clugston}{\creatim\yr1992\mo10\dy7\hr11\min4}{\revtim\yr2003\mo5\dy29\hr17\min15}{\printim\yr1996\mo10\dy28\hr9\min17}{\version32}{\edmins181}
+{\nofpages50}{\nofwords7301}{\nofchars-32766}{\*\company Photovoltaics Special Research Centre}{\nofcharsws0}{\vern89}}\widowctrl\ftnbj\aenddoc\hyphcaps0\viewkind4\viewscale150 \fet0\sectd \linex576\headery709\footery709\colsx709\endnhere\sectdefaultcl 
+{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5
+\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \widctlpar\adjustright \fs20 {\cs15\fs28\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HIDR_MAINFRAME}}}{
+\b\fs32\up6 PC1D Help Index}{\b\fs32 
+\par }{
+\par }{\uldb What\rquote s new in Version 5.9?}{\v whats_new}{
+\par 
+\par }{\uldb Getting Started}{\v getting_started}{
+\par }{\uldb Using the Device Schematic}{\v device_schematic}{
+\par }{\uldb Numerical Method}{\v numerical_method}{
+\par }{\uldb Convergence and convergence failure}{\v HIDP_CONVERGENCE_FAILURE}{
+\par }{\uldb Physical Constants}{\v pc1d_constants}{
+\par }{\uldb Bibliography}{\v bibliography}{
+\par }{\b 
+\par Commands
+\par }{\tab }{\uldb File menu}{\v menu_file}{
+\par \tab }{\uldb Device menu}{\v menu_device}{
+\par \tab }{\uldb Excitation menu}{\v menu_excitation}{
+\par \tab }{\uldb Compute menu}{\v menu_compute}{
+\par \tab }{\uldb Graph menu}{\v menu_graph}{
+\par \tab }{\uldb View menu}{\v menu_view}{
+\par \tab }{\uldb Options menu}{\v menu_options}{
+\par \tab }{\uldb Help menu}{\v menu_help}{
+\par 
+\par }{\b Program Description
+\par }{
+\par PC1D is a computer program written for IBM-compatible personal computers which solves the fully coupled nonlinear equations for the quasi-one-dimensional t
+ransport of electrons and holes in crystalline semiconductor devices, with emphasis on photovoltaic devices. This version of the program is supported and distributed by the Photovoltaics Special Research Centre at the University of New South Wales in Sydn
+e
+y, Australia 2052. Only licensed copies of the program are authorized for use. A licensed copy may be loaded and used on multiple computers or on a network provided the licensee maintains records of the number and location of these authorized copies and c
+a
+n ensure that all notifications and updates are distributed to everyone using these copies. Licensed copies are available from the PV Centre for a fee of AUST$150, which may be paid by credit card or by cheque. Contact the PV Centre via e-mail at pc1d@uns
+w.edu.au to receive an order form via fax.
+\par 
+\par PC1D runs under Windows 95/98/ME/XP/NT, and requires at least an 80386 CPU and an 80387 math coprocessor (note that most 80486 and Pentium processors have the math coprocessor built-in). It will also run on Window
+s 3.1 if Win32s is installed (Win32s 1.71 or later is required).
+\par 
+\par Only one file is necessary to run the program, PC1D.EXE. The additional file PC1D.HLP provides on-screen help, and several additional files are provided which contain material parameters for
+ selected semiconductors, standardized solar spectra, and example problems. All of the files can be simply copied into the directory of choice; no setup program is required. To store files of different type in different directories, see the instructions f
+or the }{\uldb Options menu}{\v menu_options}{.
+\par 
+\par PC1D will continue to be improved and your suggestions are appreciated. Submit them via e-mail at th
+e address shown above. Of particular interest are any computation errors that may arise, and improved values for material parameters as they become available. Licensed users will receive update notices. Those who register an e-mail contact address will be
+ provided with maintenance updates of the program and its associated files via e-mail at no cost.
+\par \page }{\cs15\fs28\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ getting_started}}}{\b\fs28 Getting Started}{\fs28 
+\par }{
+\par Using PC1D is a three step process:
+\par 
+\par 1. Set up the simulation parameters. This includes the device and material parameters, and the excitation to be applied to the device.
+\par 
+\par 2. Run the simulation.
+\par }\pard \fi-283\li283\widctlpar\ilvl12\adjustright {
+\par }\pard \widctlpar\adjustright {3. Examine the results.
+\par 
+\par PC1D has three different types of displays (called }{\i views}{), each useful for a different step of this process.
+\par 
+\par When setting up the simulation parameters, you will want to use the }{\i Parameter View}{
+. This gives a list of simulation parameters, and a schematic diagram of the device being simulated, giving you visual feedback when parameters are changed. This view also gives a shortcut: you can double-click on any li
+ne to bring up a dialog box allowing you change that parameter. You can also double-click on elements of the diagram to change them.
+\par 
+\par While you run a simulation, you can switch to the }{\i Four-Graph View}{. This fills the screen with four graphs of quantities th
+at are commonly of interest (for example, the carrier velocities; generation and recombination; etc). You can watch these quantities change as the program advances in the solution of the problem.
+\par 
+\par The}{\i  Interactive Graph View}{ is designed for intensive study 
+of a particular graph. It allows you to zoom into regions of the graph which interest you; examine the values of individual points; and copy the graph values to another Windows program (e.g. a spreadsheet) for further analysis.
+\par 
+\par But, PC1D is designed to flexible! You can switch between views at any time (even while a simulation is running). 
+\par 
+\par If you are just using PC1D for Windows for the first time, you should take a look at the example parameter files supplied with the program. Spend a little time getting
+ used to the various views, and the methods of changing parameters. A few common questions are answered below.
+\par 
+\par 
+\par }{\b How do I change the parameters for a simulation?
+\par }{Either: 
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls4\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls4\adjustright {
+Use the Display menu and Excitation menu; or
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls4\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls4\adjustright {
+Double-click on the parameters name in the Parameter view (This is the textual list of parameters which you see when you first run PC1D); or
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls4\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls4\adjustright {
+Double-click on the device schematic to change device parameters. A dialog box will appear, allowing you to specify values for the parameters which you are interested in.
+\par }\pard \widctlpar\adjustright {
+\par }{\b How do I get PC1D to calculate the results? (How do I run a simulation?)
+\par }{Either: 
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls5\adjustright {
+Use the Compute menu and select Run; or
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls5\adjustright {Press the Run button in the toolbar.
+}{\b 
+\par }\pard \widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par }\pard\plain \s49\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \b\fs20 {In the old DOS versions of PC1D, the program displayed four graphs while it was calculating the results. How can I make this happen in the Windows version?
+\par }\pard\plain \widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20 {Switch to Four Graphs view. You can do this from the View menu, or by pressing the FourGraphs button in the toolbar.
+\par 
+\par }{\b How can I examine the results of a simulation?
+\par }{Switch to interactive graph view. You can do this using the Graph menu.
+\par You can zoom into any region of the graph using a mouse or keyboard. Values from the graph can be copied to the clipboard and imported into another program, e.g. a spreadsheet.
+\par Or, if you are only interested in the values of Voc, Isc and Pmax, they are displayed in the parameter view under the heading *** RESULTS ***
+\par \page }{\cs15\fs28\up6 #{\footnote \pard\plain \widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HIDP_CONVERGENCE_FAILURE}}}{\b\fs28 Convergence and Convergence Failure
+\par }{\fs28 
+\par }{The equilibrium solution of the semiconductor equations is remarkably robust and will almost always converge. But the extreme nonlinearity of the fully-coupled semiconductor device equations makes convergence to a non-equilibrium solution difficu
+lt. Several measures have been taken within PC1D to assist convergence, but despite this you will eventually generate problems that will not converge. This section offers some advice on how to avoid convergence failure, and how to deal with it when it doe
+s occur.
+\par 
+\par }{\b Dynamic renoding
+\par }{This feature was introduced in PC1D 4.2, and reduces the likelihood of non-convergence. The basic idea is that when PC1D detects that part of the device is not converging well, it increases the number of finite elements in the dif
+ficult area. This helps to ensure that the assumptions which PC1D makes about the behaviour of solution variables remain valid.
+\par Dynamic renoding is particularly significant for problems involving reverse biased current sources.
+\par 
+\par In general, convergence failure occurs either because:
+\par (a) the dynamic renoder ran out of nodes (currently, there is a limit of 500);
+\par or (b) the solution is trying to reach a final state that is too far removed from the initial state;
+\par or (c) the situation is unphysical and has no solution.
+\par 
+\par }{\b Situations which are known to interfere with convergence
+\par }{The following situations should be avoided as they make convergence difficult:
+\par 1. Locating an electrical contact in a region that, in equilibr
+ium, is either very lightly doped or depleted. If the region in equilibrium is clearly of one type or the other, that type will be assumed to be the polarity of the contact, even if subsequent excitation causes the carrier concentrations at that point to 
+become inverted. 
+\par 2. Connecting a shunt element between two dopant regions that are both isolated by a junction from an electrical contact. This situation occurs in modeling series-connected multijunction devices. It is generally best to model these devices
+ instead as three-terminal devices, then infer the two-terminal behavior from the three-terminal results.
+\par 3. Appling a large forward voltage with no current-limiting resistor. The currents in the device can become huge in this case, and numerical overflow can occur.
+\par 4. Low velocity saturation. This is a problem when carriers are trying to go faster than the velocity limit. This problem can be avoided by setting the limit to zero (which disables velocity saturation), or by choosing fixed mobility rather than
+ variable. The problem is even more severe if total velocity saturation is specified for the numerical method.
+\par 
+\par }{\b Improving convergence by controlling the numerical method
+\par }{The following actions can be taken to try to get the problem to converge without changing the definition of the problem. 
+\par 
+\par 1. Change the element size factor in the Compute:Numerical dialog box.
+\par By decreasing the element size factor, you increase the number of elements in the problem. Decreasing this value will tend to improve convergence, u
+ntil the maximum of 500 elements is reached. However, the problem will take longer to solve. Sometimes, you will encounter situations where convergence can be improved by }{\i increasing}{ the element size factor.
+\par 
+\par 2. Adjust the normalized potential clamp (also in the Compute:Numerical dialog box).
+\par A smaller value (between 0.1 and 1) will sometimes improve convergence, although some problems benefit from larger clamp values (5-10). It is particularly helpful to reduce this value when voltage, current or light are 
+applied abruptly. Small clamp values increase the time required to solve the problem, especially problems where large reverse-bias voltages are applied.
+\par 
+\par 3. Ensure that }{\i Psi}{ and }{\i Phi clamping}{ (in the Compute:Numerical dialog box) are not both disabled.
+\par 
+\par 4. Turn off }{\i Total velocity saturation}{
+ (in the Compute:Numerical dialog box) unless you need to include this effect (as you might for some heterostructures where current is limited by velocity saturation in areas of sharp carrier-concentration gradients).
+\par 
+\par 5. On some occasions the difficulty simply may be that the problem converges very slowly. In this case, you should increase the time limit in the Compute:Numerical dialog box.
+\par 
+\par }{\b Improving convergence by imposing excitation gradually
+\par }{This is the most effective w
+ay of improving convergence. For example, to solve a silicon junction forward-biased to 0.8 volts, you may need to perform an interim solution at 0.6 volts first. You should solve the problem for steady-state at 0.6 volts, then change the bias to 0.8 volt
+s and use Compute:Continue. This will solve for steady-state, using the interim solution as the starting point for the next solution.
+\par Similarly, it may be necessary to increase the light intensity in steps, say 10 mW/cm2, 100 mW/cm2, then 1 W/cm2.
+\par 
+\par If you have a particular interest in understanding exactly why a particular problem did not converge, you can enable }{\i Graphs after every iteration}{ in the Compute:Numerical dialog, and create a user-defined graph of }{\i Convergence Error }{
+(plotted on a log scale)}{\i  }{versus }{\i Distance from front}{. This will show how far each element of the device is from convergence.\page }{\cs15\fs28\up6 #{\footnote \pard\plain \widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright 
+\fs20 {\cs15\f8\fs16\up6 #}{ whats_new}}}{\b\fs28  What\rquote s new in Version 5.9}{\b\fs28 ?
+\par }{(Release date: }{June}{ 0}{3}{).
+\par }{Graphs of minority carrier lifetime and diffusion length should now work properly in equilibrium. In the past, these graphs suffered from a loss of precision, making them jagged. 
+\par The }{short description of some batch parameters (related to doping) }{were changed }{in the QuickBatch dialog to improve clarity.}{
+\par }{\b\fs28 
+\par What\rquote s new in Version 5.8?
+\par }{(Release date: Dec 02).
+\par A bug in the velocity saturation code was fixed. This meant that the mobility reduction at high fields was being overestimated by a factor of about two. This bug did not apply when 'total velocity saturation' was selected.
+\par 
+\par }{\b\fs28 What\rquote s new in Version 5.7?
+\par }{(Release date: July 02).
+\par One minor new feature has been added, which will only be of interest to programmers.
+\par There is a new command-line option /g which allows PC1D to be run from an external program.
+\par PC1D /g filename.prm opens the parameter file \lquote filename.prm\rquote  silently, runs the simulation, copies the conte
+nts of the interactive graph to the clipboard, and then exits. Note that if the PRM file had a one-line batch file associated with it, you could modify the batch file before running PC1D in order to change a model parameter.
+\par 
+\par }{\b\fs28 Changes introduced in Version 5.6}{
+\par  (Release date: Sept 01).
+\par Rear surface texturing now works. A bug in all previous versions was causing rear surface texturing to be applied at the front instead of the rear.
+\par A new graphable function, \lquote Pri-Surface Total reflectance\rquote 
+ has been added, to make it easier to match experimental reflectance data. The Quantum Efficiency graph now displays this total reflectance, instead of separate curves for front reflectance and escape.
+\par BUGFIX: The batch commands for bandgaps were muddled up (Bandgap, AbsEd1, AbsEd2, AbsEi1, AbsEi2).
+\par }{\fs28  
+\par }{\b\fs28 Changes introduced in Version 5.5}{
+\par (Release date: Aug 00).
+\par An error in the diffusion length graph has been fixed, and the limitations on mobility have been
+ relaxed, allowing simulations of very low mobility cells. Some minor typographical errors in the numerical method section of the help file have been corrected.
+\par In rare circumstances, previous versions of PC1D 5 would crash when exiting. This problem has been fixed. 
+\par 
+\par }{\b\fs28 Changes introduced in Version 5.4}{
+\par  (Release date: June 00).
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls5\adjustright {
+BUGFIX: Under certain circumstances, quantum efficiency calculations would not converge at long wavelengths. (This was due to a compiler bug, and only occurred in PC1D 5.3). This problem has been fixed.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls5\adjustright {
+Graphs now look better when the PC1D window is only occupying part of your screen. The graphs remain readable down to small window sizes.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls5\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls5\adjustright {A \lquote reflectance\rquote 
+ shortcut button has been added to the toolbar, as a convenient way of adjusting the device reflectance.
+\par }\pard \widctlpar\adjustright {No simulation results are affected by any of these changes.
+\par 
+\par }{\b\fs28 New features introduced in Version 5.3 - Major batch enhancements
+\par }{
+\par }{\b Internal Batch mode  (\lquote QuickBatch\rquote  button on toolbar)}{
+\par A batch run can now be generated from inside PC1D, without having to use an external spreadsheet program. Just specify which parameters you want to vary, and over what range, and PC1D will do the rest.
+\par 
+\par }{\b Graphs saved between simulations}{
+\par PC1D now saves graph
+s from the last 100 simulations. You can access them by pressing PageUp and PageDown in the Interactive Graph View. This is especially useful for batch runs: if you run a batch where only one parameter is varying, by pressing PgUp and PgDn, you can graphi
+cally see the effect of varying that parameter.
+\par 
+\par }{\b Increased speed (again!) \endash  Now twice as fast as version 5.0 !}{
+\par With the new models turned off, PC1D is now five times as fast as version 4.6, or seventeen times as fast as the old DOS version (PC-1D 3.3). With the new models turned on, it is fourteen times faster than the DOS version.
+\par 
+\par }{\b Parameter view displays more information}{
+\par Values for recombination, applied circuit, light intensity, series resistance, etc are now displayed in the parameter screen. This will h
+elp ensure that you are performing the simulation that you intended. It also uses subscripts and superscripts to aid readability.
+\par 
+\par }{\b Slight convergence improvement}{
+\par Some poorly-behaved problems will now converge, due to improved numerical precision in some of PC1D\rquote s internal functions.
+\par 
+\par }{\b Minor features
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls6\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls6\adjustright {
+Light intensity limit increased: Some characterisation techniques using laser pulses result in extremely high light intensity. These situations can now be simulated.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls6\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls6\adjustright {
+If you stop a simulation, change the light sources, and continue the simulation, PC1D will now recalculate the photogeneration before continuing.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls6\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls6\adjustright {New graphable function, \lquote 
+IQE adjusted for light bias\rquote , to easily obtain the quantum efficiency of a device which is being illuminated by a secondary (constant) light source.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls6\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls6\adjustright {
+New shortcut batch parameters (BulkTau, FrS, RrS, FrIntRefl, RrIntRefl).
+\par }\pard\plain \s16\widctlpar\adjustright \fs20 {
+\par }\pard\plain \widctlpar\adjustright \fs20 {\b\fs28 Changes introduced in Version 5.2
+\par }{(Release date: Sept 98).
+\par }{\b Bugfix - deleting batch files could cause PC1D to crash}{
+\par Previous versions of PC1D didn\rquote t check whether batch files had been deleted.  PC1D would crash at the end of a simulation if the batch file had been deleted. This problem has now been fixed.
+\par 
+\par }{\b Bugfix - batch files with many parameters didn\rquote t always work}{
+\par Version 5.1 didn\rquote t always work properly for batch files with more than about 18 parameters.  It will now work properly with up to 30 parameters.
+\par }{\b 
+\par Better use of exponential notation}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls7\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls7\adjustright {
+Dialog boxes now use exponential notation for large values, instead of  (cumbersome) fixed-point notation.  For example, 43000000000 is now displayed as 4.3e10. This is particularly helpful for parameters such as intrinsic carrier concentration. 
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls7\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls7\adjustright {The ra
+nge for which scientific notation (rather than fixed point) is used can be changed from a new Options dialog box in the Options menu. It will affect dialog boxes, as well as the parameter view.
+\par }\pard \widctlpar\adjustright {
+\par }{\b Numerical method described in help files}{
+\par The numerical method used by PC1D is now described in detail in the help files. 
+\par }{\b\fs28 
+\par Changes introduced in Version 5.1
+\par }{(Release date: Mar 98).
+\par }{\b Parameter View font selection}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls8\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls8\adjustright {
+The font to be used for the parameter view can now be selected (select }{\i Font}{ in the }{\i Options}{ menu). If you have a large screen, you may want to select a smaller font. 
+\par }\pard \widctlpar\adjustright {
+\par }{\b Better batch files}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls9\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls9\adjustright {
+There is now no intrinsic limit to the length of a batch file. Previously, batch files were limited to 100 lines. The maximum number of lines now depends on the operatin
+g system you are using.  In Windows 95, batch files are limited to a few hundred lines (more if smaller font sizes are used in Parameter View). This limitation doesn\rquote t apply to Windows NT, and Microsoft will probably fix the problem for Windows 98.
+
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls9\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls9\adjustright {Batc
+h files can now have 30 fields across (although only the first 12 will print on A4 paper, unless you select a very small font size or copy the results into a spreadsheet program).
+\par }\pard \widctlpar\adjustright {
+\par }\pard\plain \s49\widctlpar\adjustright \b\fs20 {Increased speed (again!)
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard\plain \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls10\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls10\adjustright \fs20 {
+Simulation speed is now three times as fast as PC1D 4.6, or eight times as fast as PC1D 3.6.  On a 200Mhz Pentium, an IV curve for a simple cell now takes slightly less than 1 second.
+\par }\pard\plain \s16\widctlpar\adjustright \fs20 {
+\par }\pard\plain \widctlpar\adjustright \fs20 {\b Non-convergent problems}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls11\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls11\adjustright {
+PC1D is now much better at detecting non-convergent problems. If it detects a problem it can\rquote t solve, it will stop immediately. It won\rquote t display bad numerics in graphs.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls11\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls11\adjustright {
+The annoying 1 second delay when trying to stop a non-convergent problem has been dramatically reduced.
+\par }\pard \widctlpar\adjustright {
+\par }{\b Minor bug fixes}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls12\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls12\adjustright {
+Copying batch file data to clipboard would occasionally add a line of garbage at the end. This has been fixed.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls12\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls12\adjustright {
+The program was always disabling rear external photogeneration files when reloading. It now saves and loads correctly.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls12\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls12\adjustright {The mouse didn\rquote 
+t work well with non-simple curves in interactive graphs. For example, if you were sweeping voltage from +ve to -ve, it was not possible to select points with the mouse. Also, Voc, Isc and Pmax weren\rquote t always displayed. T
+hese problems have now been fixed.
+\par }\pard \widctlpar\adjustright {\b\fs28 
+\par Changes introduced in Version 5.0
+\par }{
+\par Version 5 is the first 32-bit (Windows 95 / Windows NT) version of PC1D. It will also run on Windows 3.1 if Win32s is installed (Win32s 1.71 or later is required).  It was released on 8 Sept 97. The new features are:
+\par 
+\par }{\b Increased speed}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls13\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls13\adjustright {
+Simulation speed is now twice as fast!}{\b  }{
+\par }\pard \widctlpar\adjustright {\b 
+\par Trap-assisted tunnelling
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls14\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls14\adjustright {
+Trap-assisted tunnelling can now be modelled using the Hurkx model for field-enhanced recombination. Access it through the Device:Material:Recombination dialog box.
+\par }\pard \widctlpar\adjustright {\b 
+\par Experimental data graphs}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls15\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls15\adjustright {
+External files of experimental data can be displayed simultaneously with simulation results. This makes it much simpler to fit simulation parameters to experimental results.
+\par }\pard \widctlpar\adjustright {\b 
+\par Increased simulation domain}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls16\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls16\adjustright {
+Extra batch parameters for shunt elements, contact positions, bandgap, and intrinsic concentration.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls16\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls16\adjustright {
+Internal reflection can now be set to 100% (it was previously limited to 99%).
+\par }\pard \widctlpar\adjustright {\b 
+\par Better graphs
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls18\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls18\adjustright {
+All graphs can now be user-defined. You can redefine any of the existing graphs by (a) using the Define command in the Graph menu; or (b) double-clicking in the border area of any interactive graph.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls18\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls18\adjustright {
+The graphs you select in the Four-graphs view and Interactive graph view are now saved with the excitation and parameter files. This is particularly helpful for IQE scans, etc, because it means you don\rquote 
+t have to redefine your graphs every time you restart PC1D. It also saves your auxiliary and experimental data graphs.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls18\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls18\adjustright {
+In interactive graph view, press CTRL+arrow keys to move the caret rapidly.
+\par }\pard \widctlpar\adjustright {\b 
+\par User interface enhancements}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls20\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls20\adjustright {Support for long filenames.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls20\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls20\adjustright {
+Minor features such as ToolTips for toolbar buttons.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls20\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls20\adjustright {
+Tabbed dialog boxes! Many of the old dialog boxes were combined into tabbed dialogs, so the menu structure is now much simpler and less daunting. This is a particularly big improvement for reflectance, and for light sources.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls20\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls20\adjustright {
+The parameter view no longer flickers while running a simulation. (This is one contributor to the increased speed).
+\par }\pard \widctlpar\adjustright {
+\par }{\b Backwards compatibility
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls22\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls22\adjustright {
+Loads files created by any previous version of PC1D
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls22\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls22\adjustright {
+Option to save material, device, excitation and parameter files in a form that allows them to be read by PC1D 4.5 (Of course, any new features will be lost when saved in the old version). This option appears in all of the \ldblquote Save As\rdblquote 
+ dialog boxes.
+\par }\pard \widctlpar\adjustright {
+\par }{\b Minor changes and bug fixes
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls23\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls23\adjustright {
+The program now gives correct results for rear illumination of a device made from more than one material.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls23\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls23\adjustright {E
+xternal files of absorption data are now interpolated logarithmically rather than linearly.
+\par }\pard \widctlpar\adjustright {
+\par 
+\par }{\b\fs28 Changes introduced in Version 4.6
+\par }{Version 4.6 was a very minor maintenance release, fixing an error which occured when n}{\sub i}{ was small, such as with large bandgap materials at low temperature. In such cases, the program erroneously introduced a large resistance at the contacts.
+
+\par 
+\par }{\b\fs28 Changes introduced in Version 4.5}{\fs28 
+\par }{
+\par Version 4.5 was a minor maintenance release, fixing a few problems which were discovered after the release of 4.4:
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls24\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls24\adjustright {
+The list of recently used files under the File menu now works properly.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls24\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls24\adjustright {
+The program now gives correct results when monochromatic light is used with zero intensity (such as happens when simulating the transient response to a laser pulse).
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls24\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls24\adjustright {
+The default values for free-carrier absorption in silicon now match the values recommended in the help file.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls24\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls24\adjustright {
+A few more parameters can now be used in batch files: shunt elements, bandgap and intrinsic concentration.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls24\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls24\adjustright {The file locations \ldblquote 
+Problem Parameters\rdblquote  external file path was removed, as it was not used by the program. The initial location for .PRM files should be set using the standard Windows \ldblquote Properties\rdblquote 
+ function (in Win 3.1, select the icon and press SHIFT+Enter).
+\par }\pard\plain \s16\widctlpar\adjustright \fs20 {
+\par }\pard\plain \widctlpar\adjustright \fs20 {\b\fs28 Changes introduced in Version 4.4}{\fs28 
+\par }{4.4 was a minor maintenance release (Release date: Dec 96).
+\par The silicon material parameters were updated to be consistent.
+\par Also, a few minor bugs were fixed. E.g. in the device schematic, diodes are now displayed the correct way around.
+\par 
+\par 
+\par }{\b\fs28 New features introduced in Version 4.3 - Device diagram, free-carrier absorption, and total velocity saturation.}{\fs28 
+\par }{Version 4.3 was a major release (Release date: Oct 96).
+\par In addition to minor bug fixes and improvements to the online help, the following new features were incorporated into PC1D Version 4.3:
+\par 
+\par }{\b User interface enhancements}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls25\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls25\adjustright {A diagram of the de
+vice is now displayed in the Parameter View, providing visual feedback of doping, texturing, and internal shunt elements. This makes it much easier to recognize mistakes when designing complex devices. You can also double-click on parts of the diagram to 
+change them, which gives another method for setting up parameters.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls25\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls25\adjustright {
+The behaviour of the scroll bars has been improved.
+\par }\pard \widctlpar\adjustright {
+\par }{\b Increased capacity}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls26\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls26\adjustright {
+The maximum number of timesteps has been increased to 200.
+\par }\pard \widctlpar\adjustright {
+\par }{\b Physics}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls27\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls27\adjustright {
+The majority-carrier mobility model for silicon has been revised to be more accurate in the vicinity of room temperature. The model now agrees better with the 1981 data of Thurber et al.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls27\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls27\adjustright {
+The band-to-band recombination coefficient for silicon was corrected from 9.5E-14 to 9.5E-15 cm3/s.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls27\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls27\adjustright {
+The ratio of Nc/Nv for silicon was changed from 2.8 to 1.06 to be consistent with the \ldblquote new\rdblquote  lower value of intrinsic carrier concentration of 1E10 cm-3 at 300K which is now in common use.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls27\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls27\adjustright {Free-carrier absorption can 
+now be modelled. This improves the accuracy of simulations of heavily-doped devices.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls27\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls27\adjustright {
+Velocity saturation can now be modelled accurately. Previous versions only limited carrier velocity due to a high electric field. You can now limit the velocity due to both drift and diffusion. To do so, turn on }{\i Total velocity saturation}{
+ in the Compute:Numerical dialog box. Note, however, that invoking this feature will significantly slow down your solution and is only recommended when this effect is important to your de
+vice. Normally, it will only affect heterostructures where the current is limited by thermionic emission over an energy barrier.
+\par }\pard \widctlpar\adjustright {\b 
+\par 
+\par }{\b\fs28 New features introduced in Version 4.2
+\par }{
+\par (Release date: Aug 96).
+\par }{\b Improved convergence}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls28\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls28\adjustright {
+Dynamic renoding was introduced into the solution code. This improves convergence of many problems, especially reverse bias and floating junctions.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls28\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls28\adjustright {
+The internal equations were changed back to the old ones used in Version 3. It turns out that the old equations have superior convergence properties.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls28\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls28\adjustright {8 extra plot functions were added.
+
+\par }\pard \widctlpar\adjustright {
+\par }{\b Increased speed}{
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls29\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls29\adjustright {
+Photogeneration now 4 times faster. (Makes steady-state problems 25% faster overall).
+\par }\pard \widctlpar\adjustright {\b 
+\par 
+\par }{\b\fs28 New features introduced in Version 4.1}{\fs28 
+\par }{4.1 was a minor maintenance release (Release date: July 96).
+\par Several bugs were fixed. In addition:
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls30\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls30\adjustright {
+You can now use a previously solved solution as a starting point for a new one, using the \lquote Continue\rquote  feature in the Compute menu.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls30\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls30\adjustright {
+Width of batch files was increased to 12 parameters.
+\par {\pntext\pard\plain\f3\fs20\lang1033 \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlblt\ilvl0\ls30\pnrnot0\pnf3\pnstart1\pnindent360\pnhang{\pntxtb \'b7}}\ls30\adjustright {A new plot function (Converg
+ence Error) was added.
+\par }\pard \widctlpar\adjustright {
+\par }{\b\fs28 Version 4.0 \endash  Initial Windows release}{
+\par Version 4.0 was the first version of PC1D for Windows. It was showcased at the 25th IEEE Photovoltaics Specialist Conference in Washington DC, and publicly released in June 96. It replaced the DOS version, PC-1D version 3.3.
+\par 
+\par 
+\par \page }{\cs15\fs28\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ menu_file}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ files: managing}}${\footnote \pard\plain 
+\s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ File menu commands}}}{\fs28  }{\b\fs28 File menu commands}{\fs28 
+\par }{
+\par The File menu offers the following commands:
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1302\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_FILE_DESCRIPTION}}#
+{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HIDD_DESCRIPTION}}}{Description}{\uldb \cell }{Enter or modify a text description of the contents of this parameter file.\cell }\pard \widctlpar\intbl\adjustright {\row 
+}\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1302\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\uldb New}{\v HID_FILE_NEW}{\cell Creates a new parameter file.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {\uldb Open}{\v HID_FILE_OPEN}{\uldb \cell }{Opens an existing parameter file.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {\uldb Close}{\v HID_FILE_CLOSE}{\uldb \cell }{
+Closes an opened parameter file.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {\uldb Save}{\v HID_FILE_SAVE}{\uldb \cell }{Saves an opened parameter file using the same file name.\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {\uldb Save As}{\v HID_FILE_SAVE_AS}{\uldb \cell }{Saves an opened parameter file to a specified file name.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {\uldb Print}{\v HID_FILE_PRINT}{\uldb \cell }{Prints the current window.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {\uldb Print Preview}{\v HID_FILE_PRINT_PREVIEW}{\uldb 
+\cell }{Displays the current window on the screen as it would appear printed.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {\uldb Print Setup}{\v HID_FILE_PRINT_SETUP}{\uldb \cell }{Selects a p
+rinter and printer connection.\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1302\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\uldb Exit}{\v HID_APP_EXIT}{\tab 
+\par }{\uldb \cell }{Exits PC1D.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par \page }{\cs15\fs28\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ menu_view}}}{\b\fs28 View menu commands}{\fs28 
+\par }{
+\par The View menu offers the following commands:
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1272\clvertalt\cltxlrtb \cellx7452\pard \sa120\widctlpar\intbl\adjustright {\uldb Toolbar}{\v HID_VIEW_TOOLBAR}{\uldb \cell }{Shows or hides the toolbar.\cell }\pard \widctlpar\intbl\adjustright {
+\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1272\clvertalt\cltxlrtb \cellx7452\pard \sa120\widctlpar\intbl\adjustright {\uldb Status Bar}{\v HID_VIEW_STATUS_BAR}{\uldb \cell }{Shows or hides the status bar.\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_VIEW_PARAMETERS}}}{Parameter\line View\cell }\pard 
+\widctlpar\intbl\adjustright {The Parameter view is the start-up default. This text-type screen lists all of the parameters that define your problem, and at the end there is a section for reporting the results of cal
+culations. You can double-click the mouse on most lines in the Parameter view to open a dialog box to modify that parameter. 
+\par }\pard \sa120\widctlpar\intbl\adjustright {A schematic diagram of the device is also displayed, providing visual feedback of doping, texturing, and internal shunt elements. 
+This makes it easier to recognize mistakes when designing complex devices. You can also double-click on parts of the diagram to change various parameters.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {
+\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_VIEW_FOURGRAPHS}}}{Four-\line Graph\line View\cell }\pard \widctlpar\intbl\adjustright {The Four-Graph view provides a quick overview of what's happ
+ening in your device. Double click on any of the four graphs to select it for detailed examination using the Interactive-Graph view.\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1272
+\clvertalt\cltxlrtb \cellx7452\pard \sa120\widctlpar\intbl\adjustright {\uldb Interactive-\line Graph\line View}{\v HID_VIEW_INTERACTIVEGRAPH}{\cell }\pard \widctlpar\intbl\adjustright {
+The Interactive Graph view allows you to examine specific data values on a graph. If the data you need is not in one of the predefined graphs, you can create a user-defined graph using the }{\uldb Graph menu}{\v menu_graph}{
+ to access any of 55 different functions.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {\page }{\cs15\b\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_VIEW_INTERACTIVEGRAPH}}
+}{\b Interactive Graph View
+\par }{
+\par This is the view you will want to use most often when inspecting solution results. It displays a single graph, and allows you to zoom into regions of the graph, and extract the values of individual points.
+\par 
+\par }{\i To zoom into part of the graph:
+\par }{
+\par With the mouse: Press the left mouse button. Drag over the area you want to zoom into. Release the left mouse button. (To cancel the zoom, press the right mouse button or the ESC key).
+\par 
+\par With the keyboard: Use the arrow keys to move the caret (the blinking line) to one end of the area you are interested in. Press ENTER. Move the caret to the other end. Press ENTER.
+\par 
+\par }{\i To zoom out:
+\par }{
+\par With the mouse: Press the right mouse button.
+\par 
+\par With the keyboard: Press the ESC key.
+\par 
+\par Zooming out when the graph is already fully 'zoomed out' will return you to the four-graphs view.
+\par 
+\par }{\i To examine graphs from previous simulations:
+\par }{
+\par Press PAGEUP or PAGEDOWN to view the graphs from the last 16 simulations.
+\par 
+\par \page }{\cs15\fs28\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ menu_help}}}{\b\fs28 Help menu commands}{\fs28 
+\par }{
+\par The Help menu offers the following commands, which provide you assistance with this application: 
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1077\clvertalt\cltxlrtb \cellx7257\pard \sa120\widctlpar\intbl\adjustright {\uldb Index}{\v HID_HELP_INDEX}{\uldb \cell }\pard \fi-720\li720\sa120\widctlpar\intbl\adjustright {
+Offers you an index to topics on which you can get help.\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1077\clvertalt\cltxlrtb \cellx7257\pard \sa120\widctlpar\intbl\adjustright {\uldb Using Help}{
+\v HID_HELP_INDEX}{\uldb \cell }\pard \fi-720\li720\sa120\widctlpar\intbl\adjustright {Provides general instructions on using help.\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1077
+\clvertalt\cltxlrtb \cellx7257\pard \sa120\widctlpar\intbl\adjustright {\uldb About}{\v HID_APP_ABOUT}{\uldb \cell }\pard \fi-720\li720\sa120\widctlpar\intbl\adjustright {Displays the version number of this application.\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \fi-720\li720\widctlpar\adjustright {
+\par 
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_FILE_NEW}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ files: managing}}${\footnote 
+\pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ File New command}}}{\b\fs24  New command (File menu)
+\par }{
+\par Use this command to create a new parameter file in PC1D.
+\par 
+\par You can open an existing parameter file with the }{\uldb Open command}{\v HID_FILE_OPEN}{.
+\par 
+\par }{\b Shortcuts
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Toolbar:\tab \{bmc filenew.bmp\}
+\par Keys:\tab CTRL+N
+\par }\pard \widctlpar\adjustright {
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_FILE_OPEN}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ files: managing}}${\footnote \pard\plain 
+\s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ File Open command}}}{\b\fs24  Open command (File menu)
+\par }{
+\par }\pard \sa120\widctlpar\adjustright {Use this command to open an existing parameter file. The parameters for a problem, including
+ a description of both the device and excitation, are stored in a binary-encoded parameter file with a PRM suffix. The parameter file also specifies external data files that may be necessary to describe parameters that are a function of position, waveleng
+th, or time.
+\par }\pard \widctlpar\adjustright {
+\par You can create new parameter files with the }{\uldb New command}{\v HID_FILE_NEW}{.
+\par 
+\par }{\b Shortcuts
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Toolbar:\tab \{bmc fileopen.bmp\}
+\par Keys:\tab CTRL+O
+\par }\pard \li360\widctlpar\adjustright {
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ AFX_HIDD_FILEOPEN}}}{\b\fs24 File Open dialog box
+\par }{
+\par The following options allow you to specify which file to open:
+\par }\pard \sb60\widctlpar\adjustright {\b File Name
+\par }\pard \li360\widctlpar\adjustright {Type or select the filename you want to open.  This box lists files with the extension you select in the List Files of Type box. 
+\par }\pard \sb60\widctlpar\adjustright {\b List Files of Type
+\par }\pard \li360\widctlpar\adjustright {Select the type of file you want to open:
+\par }\pard \sb60\widctlpar\adjustright {\b Drives
+\par }\pard \li360\widctlpar\adjustright {Select the drive in which PC1D stores the file that you want to open. 
+\par }\pard \sb60\widctlpar\adjustright {\b Directories
+\par }\pard \li360\widctlpar\adjustright {Select the directory in which PC1D stores the file that you want to open.
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_FILE_CLOSE}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ files: managing}}$
+{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ File Close command}}}{\b\fs24  Close command (File menu)
+\par }{
+\par Use this command to close all windows containing the active parameter
+ file.  PC1D suggests that you save changes to your parameter file before you close it.  If you close a parameter file without saving, you lose all changes made since the last time you saved it.  Before closing an untitled parameter file, PC1D displays th
+e }{\uldb Save As dialog box}{\v AFX_HIDD_FILESAVE}{ and suggests that you name and save the parameter file.
+\par 
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_FILE_SAVE}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ files: managing}}${\footnote \pard\plain 
+\s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ File Save command}}}{\b\fs24  Save command (File menu)
+\par }{
+\par }\pard \sa120\widctlpar\adjustright {Use this command to save the active parameter file to its current name and directory.  When you save a parameter file for the first time, PC1D displays the }{\uldb Save As dialog box}{\v AFX_HIDD_FILESAVE}{
+ so you can name your parameter file.  If you want to change the name and directory of an existing parameter file before you save it, choose the }{\uldb Save As command}{\v HID_FILE_SAVE_AS}{
+. The parameters for a problem, including a description of both the device and excitation, are stored in a binary-encoded file with a PRM suffix.
+ The parameter file also specifies external data files that may be necessary to describe parameters that are a function of position, wavelength, or time.
+\par }\pard \widctlpar\adjustright {
+\par }{\b Shortcuts
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Toolbar:\tab \{bmc filesave.bmp\}
+\par Keys:\tab CTRL+S
+\par }\pard \li360\widctlpar\adjustright {
+\par }\pard \widctlpar\adjustright {
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_FILE_SAVE_AS}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ files: managing}}${\footnote \pard\plain 
+\s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ File Save As command}}}{\b\fs24  Save As command (File menu)
+\par }{
+\par Use this command to save and name the active parameter file.  PC1D displays the }{\uldb Save As dialog box}{\v AFX_HIDD_FILESAVE}{ so you can name your parameter file.  
+\par 
+\par To save a parameter file with its existing name and directory, use the }{\uldb Save command}{\v HID_FILE_SAVE}{.
+\par 
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ AFX_HIDD_FILESAVE}}}{\b\fs24 File Save As dialog box
+\par }{
+\par The following options allow you to specify the name and location of the file you're about to save:
+\par }\pard \sb60\widctlpar\adjustright {\b File Name
+\par }\pard \li360\widctlpar\adjustright {Type a new filename to save a parameter file with a different name. PC1D automatically adds the extension you specify in the Save File As Type box, if you don't supply a different one.
+\par }\pard \sb60\widctlpar\adjustright {\b Save File As Type
+\par }\pard \li360\widctlpar\adjustright {Choose between the latest version of PC1D, or an old file format which can be opened by older releases of PC1D. Of course, new features can\rquote t be saved in the old format.
+\par }\pard \sb60\widctlpar\adjustright {\b Drives
+\par }\pard \li360\widctlpar\adjustright {Select the drive in which you want to store the parameter file.
+\par }\pard \sb60\widctlpar\adjustright {\b Directories
+\par }\pard \li360\widctlpar\adjustright {Select the directory in which you want to store the parameter file.
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_FILE_MRU_FILE1}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ files: managing}}$
+{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ File 1, 2, 3, 4 command}}}{\b\fs24  1, 2, 3, 4 command (File menu)
+\par }{
+\par Use the numbers and filenames listed at the bottom of the File menu to open the last four parameter files you closed. Choose the number that corresponds with the parameter file you want to open.
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_APP_EXIT}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ exit}}${\footnote \pard\plain \s16\widctlpar\adjustright 
+\fs20 {\cs15\f8\fs16\up6 $}{ File Exit command}}}{\b\fs24  Exit command (File menu)
+\par }{
+\par Use this command to end your PC1D session.  You can also use the Close command on the application Control menu.  PC1D prompts you to save parameter files with unsaved changes.
+\par 
+\par }{\b Shortcuts
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Mouse:\tab Double-click the application's Control menu button.
+\par Keys:\tab ALT+F4
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_VIEW_TOOLBAR}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ toolbar}}${\footnote 
+\pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ View Toolbar command}}}{\b\fs24  Toolbar command (View menu)
+\par }{
+\par Use this command to display and hide the Toolbar, which includes buttons for some of the most common commands in PC1D, such as File Open.  A check mark appears next to the menu item when the Toolbar is displayed.
+\par 
+\par See }{\uldb Toolbar}{\v AFX_HIDW_TOOLBAR}{ for help on using the toolbar.
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ AFX_HIDW_TOOLBAR}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ toolbar}}${\footnote \pard\plain 
+\s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ toolbar}}}{\b\fs24  Toolbar
+\par }{\{bml hlptbar.bmp\}
+\par 
+\par The toolbar is displayed across the top of the application window, below the menu bar.  The toolbar provides quick mouse access to many tools used in PC1D.
+\par 
+\par To hide or display the Toolbar, choose Toolbar from the View menu (ALT, V, T).
+\par 
+\par For help on the use of a particular toolbar button, select the button at the far right edge of the toolbar, displaying a question mark and an arrow. The cursor will change 
+to match this button. Point the new cursor to the button in question and press the mouse key. A Help file will open on-screen with information about the purpose of that button.
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_VIEW_STATUS_BAR}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ status bar}}${\footnote \pard\plain 
+\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ View Status Bar Command}}}{\b\fs24 Status Bar command (View menu)
+\par }{
+\par Use this command to display and hide the Status Bar, which describes the action to be executed by the selected menu item or depressed toolbar button, and keyboard latch state. A check mark appears next to the menu item when the Status Bar is displayed.
+
+\par 
+\par See }{\uldb Status Bar}{\v AFX_HIDW_STATUS_BAR}{ for help on using the status bar.
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ AFX_HIDW_STATUS_BAR}}K{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ status bar}}${\footnote \pard\plain 
+\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ status bar}}}{\b\fs24 Status Bar
+\par }{
+\par The status bar is displayed at the bottom of the PC1D window.  To display or hide the status bar, use the Status Bar command in the View menu.
+\par 
+\par The left area of the status bar describes actions of menu items as you use the arrow keys to navigate through menus. This area similarly shows me
+ssages that describe the actions of toolbar buttons as you depress them, before releasing them. If after viewing the description of the toolbar button command you wish not to execute the command, then release the mouse button while the pointer is off the 
+toolbar button.
+\par 
+\par The right areas of the status bar indicate the following:
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx2410\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\tx1440\adjustright {\b Indicator\cell Description\cell }\pard \widctlpar\intbl\adjustright {\b \row }\trowd \trgaph108\trleft-108 
+\clvertalt\cltxlrtb \cellx2410\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\tx1440\adjustright {Iteration Counter\cell During a numerical solution, this frame shows how many iterations have been completed toward the current solution.\cell 
+}\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\tx1440\adjustright {Convergence Indicator /\line Element Counter\cell 
+During a numerical solution, this frame shows a bar that moves towards the right as the numerical solution converges to an answer. Otherwise, this frame indicates how many finite elements are defined for the device.\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\tx1440\adjustright {Solution Status\cell This fi
+eld indicates the status of the current numerical solution. If blank, then the current problem has not yet been solved, or the parameters have been changed since the last solution. Valid solutions are indicated as Equil, Steady, or Trans for Equilibrium, 
+Steady-State, or Transient results. Do not use displayed results unless the Status frame indicates a valid solution.\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx2410\clvertalt\cltxlrtb \cellx7371
+\pard \sa120\widctlpar\intbl\tx1440\adjustright {Time Step Number\cell During a transient solution, this frame shows for which time step number the displayed graphs apply.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\fi-1440\li1440\sa120\widctlpar\tx1440\adjustright {
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_HELP_INDEX}}}{\b\fs24 Index command (Help menu)
+\par }{
+\par Use this command to display the opening screen of Help.  From the opening screen, you can jump to step-by-step instructions for using PC1D and various types of reference information.  
+\par 
+\par Once you open Help, you can click the Contents button whenever you want to return to the opening screen.
+\par 
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_HELP_USING}}}{\b\fs24 Using Help command (Help menu)
+\par }{
+\par Use this command for instructions about using Help.
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_APP_ABOUT}}}{\b\fs24 About command (Help menu)
+\par }{
+\par Use this command to display the copyright notice and version number of your copy of PC1D.
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_CONTEXT_HELP}}${\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ Help Using Help Command}}}{\b\fs24 Context Help command 
+
+\par }{\{bml curhelp.bmp\}
+\par 
+\par Use the Context Help command to obtain help on some portion of PC1D.  When you 
+choose the Toolbar's Context Help button, the mouse pointer will change to an arrow and question mark.  Then click somewhere in the PC1D window, such as another Toolbar button.  The Help topic will be shown for the item you clicked.
+\par 
+\par }{\b Shortcut
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Keys:\tab SHIFT+F1
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_HT_CAPTION}}}{\b\fs24 Title Bar
+\par }{
+\par }\pard\plain \s42\widctlpar\tx0\adjustright \f11\fs20 {\f0 The title bar is located along the top of a window.  It contains the name of the application and parameter file.
+\par }\pard\plain \widctlpar\adjustright \fs20 {
+\par }\pard\plain \s42\fi-360\li360\widctlpar\tx360\adjustright \f11\fs20 {\f0 To move the window, drag the title bar.  Note: You can also move dialog boxes by dragging their title bars.
+\par }\pard\plain \widctlpar\adjustright \fs20 {
+\par }\pard \fi-360\li360\widctlpar\tx360\adjustright {A title bar may contain the following elements:
+\par }\pard\plain \s41\fi-360\li360\sb40\sa40\widctlpar\tx360\adjustright \f11\fs20 {\f0 \{bmc bullet.bmp\}\tab Application Control-menu button
+\par \{bmc bullet.bmp\}\tab Maximize button
+\par \{bmc bullet.bmp\}\tab Minimize button
+\par \{bmc bullet.bmp\}\tab Name of the application
+\par \{bmc bullet.bmp\}\tab Name of the parameter file
+\par \{bmc bullet.bmp\}\tab Restore button
+\par }\pard\plain \widctlpar\adjustright \fs20 {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ scrollbars}}}{\b\fs24  Scroll bars
+\par }{
+\par Displayed at the right and bottom edges of the window.  The scroll boxes inside the scroll bars indicate your vertical and horizontal location in the window.  You can use the mouse to scroll to other parts of the window.
+\par 
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_SC_SIZE}}}{\b\fs24 Size command (System menu)
+\par }{
+\par Use this command to display a four-headed arrow so you can size the active window with the arrow keys.
+\par \{bml curarw4.bmp\}
+\par 
+\par After the pointer changes to the four-headed arrow:
+\par }\pard \fi-360\li360\sb60\widctlpar\adjustright {1.\tab Press one of the DIRECTION keys (left, right, up, or down arrow key) to move the pointer to the border you want to move.  
+\par 2.\tab Press a DIRECTION key to move the border.
+\par 3.\tab Press ENTER when the window is the size you want.
+\par }\pard \widctlpar\adjustright {
+\par Note:  This command is unavailable if you maximize the window.
+\par 
+\par }{\b Shortcut
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Mouse:\tab Drag the size bars at the corners or edges of the window.
+\par }\pard \li360\widctlpar\adjustright {
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_SC_MOVE}}}{\b\fs24 Move command (Control menu)
+\par }{
+\par Use this command to display a four-headed arrow so you can move the active window or dialog box with the arrow keys.
+\par \{bmc curarw4.bmp\}
+\par 
+\par Note:  This command is unavailable if you maximize the window.
+\par 
+\par }{\b Shortcut
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Keys:\tab CTRL+F7
+\par 
+\par }\pard \widctlpar\tx1440\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_SC_MINIMIZE}}${\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ System Minimize Command
+}}}{\b\fs24 Minimize command (application Control menu)
+\par }\pard \widctlpar\adjustright {
+\par Use this command to reduce the PC1D window to an icon.
+\par }\pard \fi-360\li360\widctlpar\adjustright {\b 
+\par Shortcut}{
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Mouse:\tab Click the minimize icon \{bmc scmin.bmp\} on the title bar.
+\par Keys:\tab ALT+F9
+\par }\pard \fi-360\li1080\widctlpar\adjustright {
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_SC_MAXIMIZE}}}{\b\fs24 Maximize command (System menu)
+\par }{
+\par Use this command to enlarge the active window to fill the available space.
+\par }\pard \fi-360\li360\widctlpar\adjustright {\b 
+\par Shortcut}{
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Mouse:\tab Click the maximize icon \{bmc scmax.bmp\} on the title bar; or double-click the title bar.
+\par Keys:\tab CTRL+F10 enlarges a window.
+\par }\pard \fi-360\li1080\widctlpar\adjustright {
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_SC_CLOSE}}}{\b\fs24 Close command (Control menus)
+\par }{
+\par Use this command to close the active window or dialog box.
+\par 
+\par Double-clicking a Control-menu box is the same as choosing the Close command.
+\par 
+\par }{\b Shortcuts
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Keys: \tab CTRL+F4 closes the program window
+\par \tab ALT+F4 closes the active window or dialog box
+\par }\pard \widctlpar\adjustright {\tab \tab \tab \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_SC_RESTORE}}}{\b\fs24 Restore command (Control menu)
+\par }{
+\par Use this command to return the active window to its size and position before you chose the Maximize or Minimize command.
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_SC_TASKLIST}}}{\b\fs24 Switch to command (application Control menu)
+\par }{
+\par Use this command to display a list of all open applications.  Use this "Task List" to switch to or close an application on the list.
+\par 
+\par }{\b Shortcut
+\par }\pard \fi-1080\li1440\widctlpar\tx1440\adjustright {Keys:\tab CTRL+ESC
+\par }\pard \widctlpar\adjustright {
+\par }{\b Dialog Box Options
+\par }{When you choose the Switch To command, you will be presented with a dialog box with the following options:
+\par }\pard \sb60\widctlpar\adjustright {\b Task List
+\par }\pard \li360\widctlpar\adjustright {Select the application you want to switch to or close.
+\par }\pard \sb60\widctlpar\adjustright {\b Switch To
+\par }\pard \li360\widctlpar\adjustright {Makes the selected application active.
+\par }\pard \sb60\widctlpar\adjustright {\b End Task
+\par }\pard \li360\widctlpar\adjustright {Closes the selected application.
+\par }\pard \sb60\widctlpar\adjustright {\b Cancel
+\par }\pard \li360\widctlpar\adjustright {Closes the Task List box.
+\par }\pard \sb60\widctlpar\adjustright {\b Cascade
+\par }\pard \li360\widctlpar\adjustright {Arranges open applications so they overlap and you can see each title bar.  This option does not affect applications reduced to icons.
+\par }\pard \sb60\widctlpar\adjustright {\b Tile
+\par }\pard \li360\widctlpar\adjustright {Arranges open applications into windows that do not overlap.  This option does not affect applications reduced to icons.
+\par }\pard \sb60\widctlpar\adjustright {\b Arrange Icons
+\par }\pard \li360\widctlpar\adjustright {Arranges the icons of all minimized applications across the bottom of the screen.
+\par }\pard \widctlpar\adjustright {\page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HIDR_DOC1TYPE}}}{\b\fs24 Modifying the Parameter File
+\par }{
+\par PC1D Parameter files are modified in one of two ways:
+\par 
+\par 1. You can use the menu structure to select various aspects of the device or excitation and open dialog boxes which allow you to change the values, or
+\par 
+\par 2. You can double-click on most lines in the Parameter View to open a dialog box which will allow you to enter a new value for that parameter.
+\par 
+\par If the set of parameters are modified in any way, PC1D will prompt you whether you want to save the modified parameters, before it will allow you to exit the program or overwrite the current parameters.
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_HT_NOWHERE}}}{\b\fs24 No Help Available
+\par }{
+\par No help is available for this area of the window.
+\par \page }{\cs15\b\fs24\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ AFX_HIDP_default}}}{\b\fs24  No Help Available
+\par }{
+\par No help is available for this message box.
+\par 
+\par \page }{\cs15\b\fs28\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ menu_compute}}}{\b\fs28  Compute Menu Commands
+\par }{
+\par The Compute menu offers the following commands:
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_COMPUTE_RUN}}}{Run
+\cell Begins numerical solution of the problem as currently set up, starting with equilibrium and progressing to steady-state or transient conditions as specified by the current Excitation Mode. }{\i A button on the toolbar (running person) provides 
+a quick way to invoke Run.}{\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain 
+\s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_COMPUTE_STOP}}}{Stop\cell 
+Stops the numerical computation in progress. The computation is allowed to continue for one second after this command is selected. If it has not then converged, the computation is terminated.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_COMPUTE_CONTINUE}}}{Continue\cell 
+Resumes the numerical computation that was interrupted by the Stop command. Or, if the excitation for a problem has been changed since it converged, PC1D will redo the last solution phase using the current solution as a start
+ing point. You can use this feature to help convergence in many cases.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 
+#}{ HID_COMPUTE_SINGLESTEP}}}{Single Step\cell Computes only the next step in the solution. A \ldblquote step\rdblquote  is defined here as the unit of computation leading to the next display of graphical informat
+ion. If the Numerical dialog has been set to display plots after every iteration, then this is only one iteration. Otherwise, the computation proceeds until convergence is obtained for equilibrium, steady state, or one time step. }{\i 
+A button on the toolbar (stepping person) provides a quick way to Single Step.}{\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {
+\cs15\f8\fs16\up6 #}{ HID_COMPUTE_STARTAGAIN}}}{Start Again\cell Resets the computation so that a subsequent Single Step command will start with problem initialization and equilibrium solution. Note that the Run command always st
+arts with problem initialization.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {\uldb Batch}{\v HID_COMPUTE_QUICKBATCH}{\cell 
+Opens a dialog box for enabling batch mode and identifying which tab-delimited ASCII file contains the batch-parameter information.\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560
+\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\uldb Numerical}{\v HID_COMPUTE_NUMERICAL}{\uldb \cell }{Opens a dialog box for settin
+g the parameters that control the numerical method. These affect the number of finite elements and the convergence of the solution. \cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par \page }{\cs15\b\f8\fs24\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_COMPUTE_NUMERICAL}}#{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HIDD_NUMERIC}}K{\footnote \pard\plain 
+\s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 K}{ commands}}${\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 $}{ Numerical dialog}}}{\b\fs24  Numerical Command (Compute menu)
+\par }{
+\par This command opens a dialog box which allows you to set the following parameters which affect the numerical computation algorithm. These parameters do not alter the definition of either the device or the excitation, but they will influence the accuracy of
+ the solution and the speed with which the solution converges to an answer. Improper settings of these parameters can cause the program to fail to converge even for simple problems, so the default values of each parameter are listed here for reference.
+
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {Element Size Factor\cell 
+This value determines the size of the finite elements used to partition the device. A smaller element size factor produces smaller elements, which improves accuracy but takes more time. The default value is 0.5. Values greater than 1.0 can
+ produce elements so large that converge problems may arise. Once the factor is small enough that all 500 available elements are used, making it smaller will have no further effect.\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd 
+\trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {Normalized Error Limit\cell This value determines when the solution is said to
+ have converged. Iterations will continue until the largest change in any of the three potentials (electron or hole quasi-Fermi potential, or electrostatic potential) at any node is less than this factor times the thermal voltage, kT/q (which is about 26 
+mV at room temperature). The default value is 1E-6, and will rarely need modification.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Normalized Potential Clamp\cell 
+This value determines the maximum change in one iteration that is allowed for any potential at any node, as a multiple of the thermal voltage,
+ kT/q. The default value is 1, which is rather conservative, favoring robustness over speed. Increase this value for more speed if convergence is not a problem. In particular, a higher value may be desirable to increase speed when large reverse-bias volta
+ges are imposed. Note that you can change the clamp value during a solution, for those times when you need a small value for steady state but a larger value will do for subsequent transient steps.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Clamping Phi/Psi\cell These check boxes determine how the Normal
+ized Potential Clamp is imposed. Selecting Psi clamping prevents the electrostatic potential from changing by more than the clamp amount with each iteration. Selecting Phi prevents the separation between each quasi-Fermi potential and the electrostatic po
+tential from changing too much. AT LEAST ONE OF THESE BOXES SHOULD BE SELECTED, as many problems will \ldblquote blow up\rdblquote  very quickly without some form of clamping imposed. The default is for both boxes to be selected.\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Maximum Time\cell This value determines how long (i
+n seconds) a solution is permitted to continue before it is judged to be non-convergent. The default value is 60 seconds. Some problems involving internal shunt elements may take longer than this to converge, but most problems that haven't converged after
+ a minute never will.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Renode\cell 
+These three check boxes determine when the finite-element nodes are reallocated. When initialized, the problem has 100 elements in each defined region. It is usually desirable to renode during the equilibrium solution, since th
+e initial node allocation does not yet know where the critical junction regions are located. Selecting renode for the steady-state solution serves to refine the previous node allocation based on the equilibrium solution, and allows the program to do an em
+e
+rgency renode if the quasi-Fermi potential step across any one element exceeds 32 times the thermal voltage. Renoding for a transient solution should only be invoked when the excitation significantly alters the space-charge regions, and it should especial
+ly be avoided during fast transients where time derivatives are important. The default is to renode during equilibrium and steady state solutions, but not during transient solutions.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Display graphs after every iteration\cell This check box is provided for those
+ who are interested in observing the numerical computation performed by PC1D. When checked, the plots on screen are updated after every iteration, not just when the solution has converged. This slows the solution considerably, so should be chosen only whe
+n the convergence behavior is of interest.\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {Total velocity saturation\cell 
+This check box is provided for those who need to impose rigid saturation of the total velocity of the carriers, due to both drift and diffusion. Normally, when this box is not selected, t
+he mobility of the carriers is reduced only in response to a high electric field. When this box is selected, the mobility is reduced in response to a high gradient in the quasi-Fermi potential. Although checking this box invokes the more-correct physical 
+limitation, convergence is more difficult and solutions can take more than twice as long to complete. It is recommended only for heterostructure devices in which the current is limited by thermionic emission over an energy barrier.\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par \page }{\cs15\b\f8\fs28\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ menu_options}}}{\b\fs28  Options menu commands
+\par }{
+\par The Options menu provides commands that affect the environment in which PC1D runs on your computer, but which have no effect whatever on the problem or its solution. The features you select with these commands are stored on your com
+puter in a file named PC1D.INI which is normally stored in your WINDOWS directory. Consequently, they will be used whenever you start PC1D on your computer. They will not apply if you save a problem file on disk and subsequently work with it using a diffe
+rent computer.
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HID_OPTIONS_FILELOCATIONS
+}}#{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ HIDD_PATHS}}}{File Locations\cell 
+This command opens a dialog box which allows you to specify which subdirectory you would like to serve as the default location for each type of external file used by PC1D. By segregat
+ing your files into separate directories, you will find it much easier to locate the files that you need later. If a field is left blank, the default location is assumed to be the directory from which PC1D was started.\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {
+\cs15\f8\fs16\up6 #}{ HID_OPTIONS_STORENODEDATA}}}{Store Node Data\cell 
+This command, when ticked, instructs PC1D to store the current solution on disk whenever it stores the current problem parameters. This is useful if you are in the middle of examining a solution in detail but need to quit the program for a 
+period. Saving the node data preserves the most recent solution details, preventing you from needing to repeat the solution when you return, but it also increases the size of the saved PRM files substantially. The default is for this option to be disabled
+.\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright 
+\fs20 {\cs15\f8\fs16\up6 #}{ HID_OPTIONS_DEVICEUPDATE}}}{Device Update\cell 
+This command, when ticked, instructs PC1D to update all of the on-screen graphs whenever a change is made in any of the parameters that define the device. This can be quite helpful when setting up the device para
+meters, because you can immediately see the impact of a change in doping, thickness, etc. The default for this option is for it to be enabled. However, some computers may not be fast enough to keep up. If your computer seems to be lagging behind you when 
+you are setting up a problem, consider disabling this option.\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par \page }{\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{ pc1d_constants}}}{ }{\fs32 PC1D Physical Constants
+\par }{
+\par The following physical constants are used in PC1D calculations:
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {Elementary charge, q\cell 1.6021773E-19 C\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 
+\clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {Thermal voltage at 300 K, kT/q\cell 0.025851483 V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {
+Photon energy factor, hc\cell 1239.8424 eV-nm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Permittivity of free space, }{\f3 \'65}{o\cell 8.8541878E-14 F/cm\cell }\pard \widctlpar\intbl\adjustright {\row 
+}\pard \sa120\widctlpar\intbl\adjustright {Kelvin-Celsius offset\cell 273.15 K\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard 
+\sa120\widctlpar\intbl\adjustright {Circle geometry constant, }{\f3 \'70}{\cell 3.14159265359\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par The following program constants are constraints in this version of PC1D:
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {Maximum Elements\cell 500\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb 
+\cellx1560\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {Maximum Time Steps\cell 200\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Maximum Wavelengths\cell 200\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Maximum Regions\cell 5\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1560\clvertalt\cltxlrtb \cellx7371\pard 
+\sa120\widctlpar\intbl\adjustright {Maximum Batch Columns\cell 30\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {\page }{\cs15\f8\fs16\up6 #{\footnote \pard\plain \s16\widctlpar\adjustright \fs20 {\cs15\f8\fs16\up6 #}{
+ device_schematic
+\par }}}{ }{\fs32 Device Schematic
+\par }{
+\par A schematic diagram of the device is displayed in the parameter view, providing visual feedback of doping, texturing, and internal shunt elements. This makes it easier to recognize mistakes when designing complex devices. You can also double-click on part
+s of the diagram to change various parameters.
+\par 
+\par The parameters which can be modified from the diagram are:
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx2127\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {\b Parameter}{\cell }{\b Where to click}{\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 
+\clvertalt\cltxlrtb \cellx2127\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {Background Doping\cell Centre of a region\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {First Front Diffusion
+\cell Front 3mm of a region\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {First Rear Diffusion\cell Rear 3mm of a region\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {
+Front/Rear Texturing\cell Within 3mm outside the top/bottom of the cell\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Surface Charge\cell Between 3 and 6mm of the top/bottom of the cell\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Region Thickness\cell Within 3mm outside the right of the cell\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt elements\cell 
+Within 3mm outside the left of the cell\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx2127\clvertalt\cltxlrtb \cellx7371\pard \sa120\widctlpar\intbl\adjustright {Contacts\cell 
+To the left of the shunt elements\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par }}

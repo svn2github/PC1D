@@ -1,0 +1,224 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\nowidctlpar\adjustright \fs20\lang3081 \snext0 Normal;}{\s1\sa120\keepn\widctlpar\outlinelevel0\adjustright \b\fs20\lang3081 \sbasedon0 \snext0 heading 1;}{\*\cs10 \additive Default Paragraph Font;}{
+\s15\nowidctlpar\adjustright \fs20\lang3081 \sbasedon0 \snext15 footnote text;}{\*\cs16 \additive \super \sbasedon10 footnote reference;}}{\*\listtable{\list\listtemplateid-66557760\listsimple{\listlevel\levelnfc0\leveljc0\levelfollow0\levelstartat2
+\levelold\levelspace0\levelindent283{\leveltext\'03\'00. ;}{\levelnumbers\'01;}\b0\i0\f0\fs20\fbias0 \fi-283\li283 }{\listname ;}\listid217085515}}{\*\listoverridetable{\listoverride\listid217085515\listoverridecount0\ls1}}{\info{\author Paul A. Basore}
+{\operator Donald Clugston}{\creatim\yr1996\mo4\dy16\hr11\min28}{\revtim\yr1999\mo10\dy15\hr17\min26}{\version7}{\edmins130}{\nofpages9}{\nofwords1692}{\nofchars9648}{\*\company Photovoltaics Special Research Centre}{\nofcharsws0}{\vern89}}
+\paperw11906\paperh16838 \widowctrl\ftnbj\aenddoc\hyphcaps0\formshade\viewkind4\viewscale150 \fet0\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang
+{\pntxtb (}{\pntxta )}}\pard\plain \widctlpar\adjustright \fs20\lang3081 {\cs16\b\fs28\super #{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super #}{ HIDD_QUICKBATCH}}#{\footnote \pard\plain \s15\widctlpar\adjustright 
+\fs20\lang3081 {\cs16\super #}{ HID_COMPUTE_QUICKBATCH}}K{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super K}{ commands; Batch mode}}${\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super $}{ Batch mode}
+}}{\b\fs28  Batch Mode (Compute menu)
+\par }{
+\par }\pard \sa120\widctlpar\adjustright {
+Batch mode is a short cut which allows you to rapidly perform an optimization study for a particular configuration (PRM file). Rather than creating a series of PRM files, you only need to create one, and then specify which parameters should be varied.
+
+\par To do a batch run, click the \lquote Batch\rquote  button on the toolbar (the icon shows many people running). 
+\par Parameters can be chosen from the drop-down lists. There\rquote s a description of the parameter at the bottom of the dialog box. For inp
+ut parameters, you need to specify the range to be varied over, the number of different values, and if they should be varied logarithmically or linearly.
+\par 
+\par When you\rquote ve finished, press OK. The table will appear at the bottom of the parameter view. Results parameters will appear as question marks.
+\par Run the simulation as normal. As each result is calculated, it will appear in the table, replacing the question mark. The number of simulations performed so far will be displayed in the title bar.
+\par }\pard\plain \s1\sa120\keepn\widctlpar\outlinelevel0\adjustright \b\fs20\lang3081 {Examining the results
+\par }\pard\plain \sa120\widctlpar\adjustright \fs20\lang3081 {Use the Copy button to copy the results into the clipboard. From there, they can be pasted into other programs. For example, the results could be pasted into a spreadsheet and graphed.
+\par If you\rquote re interested in how a particular graph varies, select it in 
+Interactive Graph View before running the batch. After the batch has finished, use the PageUp and PageDown keys to see how the graphs varied for different parameter values. (You can keep the axes constant while doing this by selecting \lquote retain zoom
+\rquote  in the Graph menu. You can reset the graphs using \lquote reset history graphs\rquote  in the same menu).
+\par Note: Any parameter that is disabled in the PRM file will have no effect on batch results. For example, the front texture angle is irrelevant if texturing is disabled.
+\par 
+\par }\pard\plain \s1\sa120\keepn\widctlpar\outlinelevel0\adjustright \b\fs20\lang3081 {Advanced feature: Permute
+\par }\pard\plain \sa120\widctlpar\adjustright \fs20\lang3081 {If you vary multiple parameters, they can be varied together, or you can solve for all combinations. Click the \lquote Permute\rquote 
+ check box to do all permutations of that input parameter. If permute is off, the parameter will be tied to the parameter above it.
+\par }\pard\plain \s1\sa120\keepn\widctlpar\outlinelevel0\adjustright \b\fs20\lang3081 {External Batch Files
+\par }\pard\plain \sa120\widctlpar\adjustright \fs20\lang3081 {If you find the \lquote QuickBatch\rquote 
+ method is too restrictive, you can also use an external batch file. This file should contain only the parameters that vary between simulations, and the results that are desired. For exam
+ple, a batch file for a solar cell could contain a list of background doping values, and Voc, Isc and Pmax as desired results. To perform a batch run, do the following steps:
+\par From a spreadsheet (e.g. Microsoft Excel), enter the parameters in tabular form. 
+Place input parameters on the left hand side of the table, and results parameters on the right. The parameters can be chosen from a list of about 150. (See below for the list). 
+\par }\pard \widctlpar\adjustright {There is no intrinsic limit to the length of a batch file. Previously, batch f
+iles were limited to 100 lines. The maximum number of lines now depends on the operating system you are using.  In Windows 95, batch files are limited to a few hundred lines (more if smaller font sizes are used in Parameter View). This limitation doesn
+\rquote t apply to Windows NT.
+\par 
+\par Batch files can have 30 fields across (although only the first 12 will print on A4 paper, unless you select a very small font size or copy the results into a spreadsheet program).
+\par 
+\par Save the table in \ldblquote Tabbed Text\rdblquote  format. The file should end in \ldblquote .txt\rdblquote .
+\par 
+\par }\pard \sa120\widctlpar\adjustright {From PC1D, open your PRM file. Using the Compute:Batch menu, select the text file that you created with your spreadsheet. 
+\par Note: Shortcuts to files on network drives are not supported. You must select the batch file directly.
+\par }{\b Example}{
+\par There is a sample batch file included with PC1D called BatchExample.txt, which may be useful for first-time users of the batch capability.
+\par 
+\par }{\b\fs24 Batch Parameters
+\par }{The parameters which can be specified are:
+\par }{\uldb Input Parameters}{\v batch_input}{
+\par \tab }{\uldb Device Parameters}{\v batch_device}{
+\par \tab }{\uldb Region Parameters}{\v batch_region}{
+\par \tab }{\uldb Excitation Parameters}{\v batch_excitation}{
+\par \tab }{\uldb Numerical Parameters}{\v batch_numerical}{
+\par }{\uldb Results Parameters}{\v batch_output}{
+\par \tab }{\uldb Voltage, current and power}{\v batch_calculated}{
+\par \tab }{\uldb Spatial results}{\v batch_spatial}{
+\par }\pard \widctlpar\adjustright {
+\par Several abbreviations are used in batch parameter titles:
+\par Fr = Front, Rr = Rear
+\par Tx=Texture
+\par Refl = Reflection, BroadRef=Broadband reflection
+\par Bkgnd=Background
+\par Dop=Doping
+\par Pos=Position
+\par Pri=Primary, Sec=Secondary
+\par Insy=Intensity
+\par Mono=Monochrome wavelength
+\par Coll=Collector
+\par SS=Steady-state value, TR1=Initial transient value, TR2=final transient value
+\par }{\b\fs28 \page }{\cs16\b\fs28\super #{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super #}{ batch_input}} K{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super K}{ Batch mode; Units}}${\footnote 
+\pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super $}{ Batch Input Parameters, List of}}}{\b\fs28  Input parameters
+\par 
+\par }{\cs16\b\fs24\super #{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super #}{ batch_device}}}{\b\fs24 Device parameters
+\par 
+\par }{These batch parameters specify the device parameters which apply to the entire device (not just individual regions). This includes the front and rear surface charge and reflection properties, and the device area.
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1123\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {\b\i Name\cell Meaning\cell Units\cell }\pard \widctlpar\intbl\adjustright {\b\i \row 
+}\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1123\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {Area\cell Area\cell cm2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {FrTxAngle\cell Front texture angle\cell degrees\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrTxDepth\cell Front texture depth\cell um\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrTxAngle\cell Rear texture angle\cell degrees\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrTxDepth\cell Rear texture depth\cell 
+um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrBarrier\cell Height of front surface barrier (positive= bands bend up)\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {FrCharge\cell Front surface charge\cell cm-2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrBarrier\cell Height of rear surface barrier (positive= bands bend up)\cell eV
+\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrCharge\cell Rear surface charge\cell cm-2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {EmitterR\cell 
+Emitter internal resistance\cell ohms\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BaseR\cell Base internal resistance\cell ohms\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd 
+\trgaph108\trleft-108\trhdr \clvertalt\cltxlrtb \cellx1123\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {CollectorR\cell Collector internal resistance\cell ohms\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {EmitterX\cell Emitter distance from front\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BaseX\cell Base distance from front
+\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {CollectorX\cell Collector distance from front\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt1\cell 
+Value of 1st shunt element\cell seimens\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt2\cell Value of 2nd shunt element\cell seimens\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Shunt3\cell Value of 3rd shunt element\cell seimens\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt4\cell Value of 4th shunt element\cell seimens\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt1Xa\cell Anode position of 1st shunt element\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt1Xc\cell 
+Cathode position of 1st shunt\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt2Xa\cell Anode position of 2nd shunt\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Shunt2Xc\cell Cathode position of 2nd shunt\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt3Xa\cell Anode position of 3rd shunt\cell um\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt3Xc\cell Cathode position of 3rd shunt\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt4Xa\cell 
+Anode position of 4th shunt\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Shunt4Xc\cell Cathode position of 4th shunt\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {FrRefl\cell Front reflectance (fixed)\cell %\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrRefl\cell Rear reflectance (fixed)\cell %\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrBroadRef\cell Front broadband reflectance\cell %\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrBroadRef\cell 
+Rear broadband reflectance\cell %\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrOutThick\cell Thickness of outer layer (for front broadband)\cell nm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {FrMidThick\cell \ldblquote  front middle layer\cell nm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrInThick\cell \ldblquote  front inner layer\cell nm\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrOutIndex\cell Refractive index of front outer layer\cell -\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrMidIndex\cell 
+\ldblquote  front middle layer\cell -\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrInIndex\cell \ldblquote  front inner layer\cell -\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {RrOutThick\cell Thickness of rear outer layer\cell nm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrMidThick\cell \ldblquote  rear middle layer\cell nm\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrInThick\cell \ldblquote  rear inner layer\cell nm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrOutIndex\cell 
+Refractive index of rear outer layer\cell -\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrMidIndex\cell \ldblquote  rear middle layer\cell -\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {RrInIndex\cell \ldblquote  rear inner layer\cell -\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrIntRefl1\cell Front:First internal reflection\cell %\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrIntRefl2\cell Subsequent internal reflection\cell %\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrIntRefl1\cell 
+Rear: First internal reflection\cell %\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrIntRefl2\cell Subsequent internal reflection\cell %\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {FrIntRefl\cell Front internal reflection (all passes)\cell %\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108\trhdr \clvertalt\cltxlrtb \cellx1123\clvertalt\cltxlrtb \cellx4253
+\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {RrIntRefl\cell Rear internal reflection (all passes)\cell %\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par }{\cs16\fs24\super #{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super #}{ batch_region}}}{\b\fs24 Region parameters}{\fs24 
+\par }{These batch parameters let you define region-specific device parameters.
+\par With these parameters, you must specify a region number (in parentheses) after the name. e.g. BkgndDop(3) gives values for the background doping of region 3. Region 1 is the region closest to the front of the device.
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {\b\i Name\cell Meaning\cell Units\cell }\pard \widctlpar\intbl\adjustright {\b\i \row 
+}\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {Thickness\cell Thickness of region\cell um\cell }\pard \widctlpar\intbl\adjustright {\row 
+}\pard \sa120\widctlpar\intbl\adjustright {BkgndDop\cell Background doping\cell cm-3\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrDopPeak1\cell 1st Front doping - peak value\cell cm-3\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrDopDpth1\cell \ldblquote  - depth factor\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrDopPos1\cell \ldblquote 
+ - peak position\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrDopPeak2\cell 2nd front diffusion - peak\cell cm-3\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {FrDopDpth2\cell \ldblquote  - depth factor\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrDopPos2\cell \ldblquote  - peak position\cell um\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrDopPeak1\cell 1st rear diffusion -peak\cell cm-3\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrDopDpth1\cell \ldblquote 
+ - depth factor\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrDopPos1\cell \ldblquote  - peak position\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108\trhdr 
+\clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {RrDopPeak2\cell 2nd rear diffusion - peak\cell cm-3\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {RrDopDpth2\cell \ldblquote  - depth factor\cell um\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrDopPos2\cell \ldblquote  - peak position\cell um\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BulkTaun\cell Bulk recomb.: electron lifetime\cell us\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BulkTaup\cell 
+Bulk recombination: hole lifetime\cell us\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BulkTau\cell Bulk recombination, set electron and hole lifetime to the same value\cell us\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BulkEt\cell Bulk trap energy level\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrSn\cell 
+Front surface electron recombination velocity\cell cm/s\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrSp\cell Front surface hole recombination velocity\cell cm/s\cell }\pard \widctlpar\intbl\adjustright {\row 
+}\pard \sa120\widctlpar\intbl\adjustright {FrEt\cell Front surface trap energy level\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrSn\cell Rear surface electron recombination velocity\cell cm/s\cell 
+}\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrSp\cell Rear surface hole recombination velocity\cell cm/s\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {RrEt\cell 
+Rear surface trap energy level\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {FrS\cell Front surface recomb velocity, electrons and holes\cell cm/s\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {RrS\cell Rear surface recomb velocity, electrons and holes\cell cm/s\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Ni200\cell Intrinsic concentation at 200K\cell \cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Ni300\cell Intrinsic concentation at 300K\cell \cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Ni400\cell 
+Intrinsic concentation at 400K\cell \cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BandGap\cell BandGap\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {AbsEd1
+\cell 1st Direct BandGap (for absorption)\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {AbsEd2\cell 2nd Direct Bandgap\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {AbsEi1\cell 1st Indirect BandGap\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108\trhdr \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245
+\pard \sa120\widctlpar\intbl\adjustright {AbsEi2\cell 2nd Indirect BandGap\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {\b\fs24 
+\par }{\cs16\b\fs24\super #{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super #}{ batch_excitation}}}{\b\fs24 Excitation parameters
+\par }{These parameters give you control over the excitation parameters to be used in each individual run in a batch mode. These are the same as the parameters in the dialog boxes which can be accessed from the Excitation menu. 
+\par }{\b 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {\b\i Name\cell Meaning\cell Units\cell }\pard \widctlpar\intbl\adjustright {\b\i \row 
+}\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {Temp\cell Temperature of device\cell kelvin\cell }\pard \widctlpar\intbl\adjustright {\row 
+}\pard \sa120\widctlpar\intbl\adjustright {BaseResSS\cell Base steady-state resistance\cell ohms\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BaseResTR\cell Base transient resistance\cell ohms\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BaseVltSS\cell Base steady-state voltage\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BaseVltTR1\cell 
+Base transient initial voltage\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BaseVltTR2\cell Base transient final voltage\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {CollResSS\cell Collector steady-state resistance\cell ohms\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {CollResTR\cell Collector transient resistance\cell ohms\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {CollVltSS\cell Collector steady-state voltage\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {CollVltTR1\cell 
+Collector transient initial voltage\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {CollVltTR2\cell Collector transient final voltage\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd 
+\trgaph108\trleft-108\trhdr \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {PriInsySS\cell Primary source steady-state intensity\cell Wcm-2\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {PriInsyTR1\cell Primary source initial transient intensity\cell Wcm-2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {PriInsyTR2\cell 
+Primary source final transient intensity\cell Wcm-2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {PriMonoSS\cell Pri: Wavelength - steady state\cell nm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {PriMonoTR1\cell Pri: initial transient wavelength\cell nm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {PriMonoTR2\cell Pri: final transient wavelength\cell nm\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {PriBlackT\cell Pri: Blackbody temperature\cell kelvin\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {SecInsySS\cell 
+Secondary source steady-state intensity\cell Wcm-2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {SecInsyTR1\cell Sec: Initial transient intensity\cell Wcm-2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {SecInsyTR2\cell Sec: Final transient intensity\cell Wcm-2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {SecMonoSS\cell Sec: Wavelength - steady state\cell nm\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {SecMonoTR1\cell Sec: Initial transient wavelength\cell nm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {SecMonoTR2\cell 
+Sec: Final transient wavelength\cell nm\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108\trhdr \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {
+SecBlackT\cell Sec: Blackbody temperature\cell kelvin\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par }{\cs16\b\fs24\super #{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super #}{ batch_numerical}}}{\b\fs24 Numerical parameters
+\par }{These parameters give you control ov
+er the numerical parameters to be used in each individual run in a batch mode. These are the same as the parameters in the Compute:Numerical... dialog box. They're provided here to make it possible to do batch runs involving simulations with different con
+vergence properties.
+\par }{\b 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {\b\i Name\cell Meaning\cell Units\cell }\pard \widctlpar\intbl\adjustright {\b\i \row 
+}\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {ElemSize\cell Element size factor\cell -\cell }\pard \widctlpar\intbl\adjustright {\row 
+}\pard \sa120\widctlpar\intbl\adjustright {ErrorLimit\cell Normalized error limit\cell -\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb 
+\cellx5245\pard \sa120\widctlpar\intbl\adjustright {Clamp\cell Normalized potential clamp\cell -\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par }{\b\fs28 \page }{\cs16\b\fs28\super #{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super #}{ batch_output}} K{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super K}{ Batch mode; Units}}${\footnote 
+\pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super $}{ Batch Results Parameters, List of}}}{\b\fs28  Results parameters
+\par 
+\par }{\cs16\b\fs24\super #{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super #}{ batch_calculated}}}{\b\fs24 Voltage, current and power
+\par }{These results parameters give you access to the voltage
+, current and power for the base and collector contacts, and for the internal shunt elements. The values displayed in the batch results will be the steady-state values (for steady state excitation mode) or the final transient time step (for transient exci
+tation).
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {\b\i Name\cell Meaning\cell Units\cell }\pard \widctlpar\intbl\adjustright {\b\i \row 
+}\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {Vb\cell Base voltage\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Vc\cell Collector voltage\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Ib\cell Base current\cell A\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Vb\cell Collector current\cell A\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BaseVoc\cell Voc, base contact\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {BaseIsc\cell Isc, base contact\cell A\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {BasePmax\cell Pmax, base contact\cell W\cell }\pard \widctlpar\intbl\adjustright {\row 
+}\pard \sa120\widctlpar\intbl\adjustright {CollVoc\cell Voc, collector contact\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {CollIsc\cell Isc, collector contact\cell A\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {CollPmax\cell Pmax, collector contact\cell W\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {V1\cell Voltage across 1st shunt element
+\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {I1\cell Current through 1st shunt element\cell A\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {V2\cell 
+Voltage across 2nd shunt element\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {I2\cell Current through 2nd shunt element\cell A\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {V3\cell Voltage across 3rd shunt element\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {I3\cell Current through 3rd shunt element\cell A\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {V4\cell Voltage across 4th shunt element\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb 
+\cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {I4\cell Current through 4th shunt element\cell A\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par }{\cs16\b\fs24\super #{\footnote \pard\plain \s15\widctlpar\adjustright \fs20\lang3081 {\cs16\super #}{ batch_spatial}}}{\b\fs24 Spatial results
+\par }{These parameters give you access to all of the results used by the spatial graphs . You must specify the distance from front (
+in um) in parentheses after the name. e.g. Jn(10.5) gives the electron current density at the point 10.5 um from the front surface. The values displayed in the batch results will be the steady-state values (for steady state excitation mode) or the final t
+ransient time step (for transient excitation).
+\par 
+\par }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {\b\i Name\cell Meaning\cell Units\cell }\pard \widctlpar\intbl\adjustright {\b\i \row 
+}\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb \cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {Na\cell Acceptor Doping Density\cell cm-3\cell }\pard \widctlpar\intbl\adjustright {\row 
+}\pard \sa120\widctlpar\intbl\adjustright {RBulk\cell Bulk Recombination Rate\cell cm-3/s\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Rho\cell Charge Density\cell C/cm3\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Ec\cell Conduction Band Edge\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Cond\cell Conductivity\cell S/cm\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {CCum\cell Cumulative Conductivity\cell S\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {CCum_\cell Cumulative Excess Conductivity
+\cell S\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Gcum\cell Cumulative Photogeneration\cell s-1\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Rcum\cell 
+Cumulative Recombination\cell s-1\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Perm\cell Dielectric Constant (Permeability)\cell -\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Ld\cell Diffusion Length\cell m\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Nd\cell Donor Doping Density\cell cm-3\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Eg\cell Effective Energy Gap\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Nie\cell Effective Intrinsic Concentration\cell cm-3\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {E\cell Electric Field\cell V/cm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {In\cell Electron Current\cell A\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Jn\cell Electron Current Density\cell A/cm2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {N\cell Electron Density\cell cm-3\cell 
+}\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Ndiff\cell Electron Diff. Current Density\cell A/cm2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Ndrift\cell 
+Electron Drift Current Density\cell A/cm2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {MuN\cell Electron Mobility\cell cm2/Vs\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {PhiN\cell Electron Quasi-Fermi Energy\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Vn\cell Electron Velocity\cell cm/s\cell }\pard \widctlpar\intbl\adjustright {\row 
+}\pard \sa120\widctlpar\intbl\adjustright {Psi\cell Electrostatic Potential\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Rho_\cell Excess Charge Density\cell C/cm3\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Cond_\cell Excess Conductivity\cell S/cm\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {N_\cell Excess Electron Density\cell cm-3
+\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Nratio\cell Excess Electron Density Ratio\cell \cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Psi_\cell 
+Excess Electrostatic Potential\cell V\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {P_\cell Excess Hole Density\cell cm-3\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright 
+{Pratio\cell Excess Hole Density Ratio\cell \cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {PNratio\cell Excess pn Product Ratio\cell \cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {G\cell Generation Rate\cell cm-3/s\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Ip\cell Hole Current\cell A\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Jp\cell Hole Current Density\cell A/cm2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {P\cell Hole Density\cell cm-3\cell }\pard \widctlpar\intbl\adjustright {\row }\pard 
+\sa120\widctlpar\intbl\adjustright {Pdiff\cell Hole Diff. Current Density\cell A/cm2\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Pdrift\cell Hole Drift Current Density\cell A/cm2\cell }\pard 
+\widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {MuP\cell Hole Mobility\cell cm2/Vs\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {PhiP\cell Hole Quasi-Fermi Energy\cell eV\cell 
+}\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Vp\cell Hole Velocity\cell cm/s\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Tau\cell LLI Carrier Lifetime\cell s\cell 
+}\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {PNnorm\cell Normalized Excess pn Product\cell \cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Res\cell Resistivity\cell ohm*cm
+\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {It\cell Total Current\cell A\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Jt\cell Total Current Density\cell A/cm2
+\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \sa120\widctlpar\intbl\adjustright {Evac\cell Vacuum Energy\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\trowd \trgaph108\trleft-108 \clvertalt\cltxlrtb \cellx1276\clvertalt\cltxlrtb 
+\cellx4253\clvertalt\cltxlrtb \cellx5245\pard \sa120\widctlpar\intbl\adjustright {Ev\cell Valence Band Edge\cell eV\cell }\pard \widctlpar\intbl\adjustright {\row }\pard \widctlpar\adjustright {
+\par }}
