@@ -1,0 +1,1885 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""res\\pc1d.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  \t// Standard components\r\n"
+    "#include ""afxprint.rc""\t// printing/print preview resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\PC1D.ICO"
+IDI_LAMBDA              ICON    DISCARDABLE     "RES\\LAMBDA.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CROSSHAIRCARET      BITMAP  DISCARDABLE     "RES\\CROSSHAI.BMP"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+IDR_MAINFRAME           BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Description...",             ID_FILE_DESCRIPTION
+        MENUITEM SEPARATOR
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Device"
+    BEGIN
+        POPUP "&Select Region"
+        BEGIN
+            MENUITEM "1",                           ID_DEVICE_SELECT_1
+            , CHECKED, GRAYED
+            MENUITEM "2",                           ID_DEVICE_SELECT_2
+            , CHECKED, GRAYED
+            MENUITEM "3",                           ID_DEVICE_SELECT_3
+            , CHECKED, GRAYED
+            MENUITEM "4",                           ID_DEVICE_SELECT_4
+            , CHECKED, GRAYED
+            MENUITEM "5",                           ID_DEVICE_SELECT_5
+            , CHECKED, GRAYED
+        END
+        POPUP "&Insert Region"
+        BEGIN
+            MENUITEM "1",                           ID_DEVICE_INSERT_1
+            , GRAYED
+            MENUITEM "2",                           ID_DEVICE_INSERT_2
+            , GRAYED
+            MENUITEM "3",                           ID_DEVICE_INSERT_3
+            , GRAYED
+            MENUITEM "4",                           ID_DEVICE_INSERT_4
+            , GRAYED
+            MENUITEM "5",                           ID_DEVICE_INSERT_5
+            , GRAYED
+        END
+        POPUP "Remo&ve Region"
+        BEGIN
+            MENUITEM "1",                           ID_DEVICE_REMOVE_1
+            , GRAYED
+            MENUITEM "2",                           ID_DEVICE_REMOVE_2
+            , GRAYED
+            MENUITEM "3",                           ID_DEVICE_REMOVE_3
+            , GRAYED
+            MENUITEM "4",                           ID_DEVICE_REMOVE_4
+            , GRAYED
+            MENUITEM "5",                           ID_DEVICE_REMOVE_5
+            , GRAYED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "T&hickness...",               ID_DEVICE_THICKNESS
+        POPUP "&Material"
+        BEGIN
+            MENUITEM "&Permittivity...",            ID_DEVICE_MATERIAL_PERMITTIVITY
+
+            MENUITEM "Band &Structure...",          ID_DEVICE_MATERIAL_BANDSTRUCTURE
+
+            MENUITEM "&BG Narrowing...",            ID_DEVICE_MATERIAL_BGNARROWING_MODEL
+
+            MENUITEM "&Recombination...",           ID_DEVICE_MATERIAL_RECOMBINATION
+
+            POPUP "&Mobilities"
+            BEGIN
+                MENUITEM "&Fixed...",                   ID_DEVICE_MATERIAL_MOBILITIES_FIXED
+                , CHECKED
+                MENUITEM "&Variable...",                ID_DEVICE_MATERIAL_MOBILITIES_VARIABLE
+                , CHECKED
+            END
+            MENUITEM "Opti&cal...",                 ID_MATERIAL_OPTICAL
+            MENUITEM SEPARATOR
+            MENUITEM "&New",                        ID_MATERIAL_NEW
+            MENUITEM "&Open...",                    ID_MATERIAL_OPEN
+            MENUITEM "Save &As...",                 ID_MATERIAL_SAVEAS
+        END
+        POPUP "&Doping"
+        BEGIN
+            MENUITEM "&Background...",              ID_DEVICE_DOPING_BACKGROUND
+
+            MENUITEM "&First Front...",             ID_DEVICE_DOPING_DIFFUSIONS_FIRSTFRONT
+            , CHECKED
+            MENUITEM "&Second Front...",            ID_DEVICE_DOPING_DIFFUSIONS_SECONDFRONT
+            , CHECKED
+            MENUITEM "Front &External...",          ID_DEVICE_DOPING_FRONT_EXTERNAL
+            , CHECKED
+            MENUITEM "First &Rear...",              ID_DEVICE_DOPING_DIFFUSIONS_FIRSTREAR
+            , CHECKED
+            MENUITEM "Se&cond Rear...",             ID_DEVICE_DOPING_DIFFUSIONS_SECONDREAR
+            , CHECKED
+            MENUITEM "Rear E&xternal...",           ID_DEVICE_DOPING_REAR_EXTERNAL
+            , CHECKED
+        END
+        MENUITEM "&Recombination...",           ID_DEVICE_RECOMB
+        MENUITEM SEPARATOR
+        MENUITEM "Ar&ea...",                    ID_DEVICE_AREA
+        MENUITEM "&Texture...",                 ID_DEVICE_TEXTURE
+        MENUITEM "S&urface charge...",          ID_DEVICE_SURFACES
+        MENUITEM "&Contacts...",                ID_DEVICE_CIRCUIT_CONTACTS
+        MENUITEM "Internal &Elements...",       ID_DEVICE_CIRCUIT_INTERNALELEMENTS
+        , CHECKED
+        MENUITEM "Re&flectance...",             ID_DEVICE_REFLECTANCE
+        MENUITEM SEPARATOR
+        MENUITEM "&New",                        ID_DEVICE_NEW
+        MENUITEM "&Open...",                    ID_DEVICE_OPEN
+        MENUITEM "Save &As...",                 ID_DEVICE_SAVEAS
+    END
+    POPUP "E&xcitation"
+    BEGIN
+        MENUITEM "&Mode...",                    ID_EXC_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "&Temperature...",             ID_EXC_TEMPERATURE
+        MENUITEM "&Circuit...",                 ID_EXC_BASE_SOURCE
+        POPUP "&Photogeneration"
+        BEGIN
+            MENUITEM "&Primary",                    ID_EXC_PHOTO_PRI
+            MENUITEM "&Secondary",                  ID_EXC_PHOTO_SEC
+            MENUITEM "&External...",                ID_EXC_PHOTO_EXTERNAL
+            , CHECKED
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&New",                        ID_EXCITATION_NEW
+        MENUITEM "&Open...",                    ID_EXCITATION_OPEN
+        MENUITEM "Save &As...",                 ID_EXCITATION_SAVEAS
+    END
+    POPUP "&Compute"
+    BEGIN
+        MENUITEM "&Run\tF5",                    ID_COMPUTE_RUN
+        MENUITEM "St&op\tAlt+F5",               ID_COMPUTE_STOP
+        MENUITEM "&Continue",                   ID_COMPUTE_CONTINUE
+        MENUITEM SEPARATOR
+        MENUITEM "Single &Step\tCtrl+F5",       ID_COMPUTE_SINGLESTEP
+        MENUITEM "Start &Again",                ID_COMPUTE_STARTAGAIN
+        MENUITEM SEPARATOR
+        MENUITEM "&Batch...",                   ID_COMPUTE_QUICKBATCH
+        MENUITEM SEPARATOR
+        MENUITEM "&Numerical...",               ID_COMPUTE_NUMERICAL
+    END
+    POPUP "&Graph"
+    BEGIN
+        POPUP "&Spatial"
+        BEGIN
+            MENUITEM "Doping Densities",            ID_GRAPH_SPATIAL_DOPINGDENSITIES
+
+            MENUITEM "Carrier Densities",           ID_GRAPH_SPATIAL_CARRIERDENSITIES
+
+            MENUITEM "Electrostatic Potential",     ID_GRAPH_SPATIAL_ELECTROSTATICPOTENTIAL
+
+            MENUITEM "Electric Field",              ID_GRAPH_SPATIAL_ELECTRICFIELD
+
+            MENUITEM "Charge Density",              ID_GRAPH_SPATIAL_CHARGEDENSITY
+
+            MENUITEM "Current Density",             ID_GRAPH_SPATIAL_CURRENTDENSITY
+
+            MENUITEM "Generation&&Recombination",   ID_GRAPH_SPATIAL_PHOTOGENERATION
+
+            MENUITEM "Carrier Mobilities",          ID_GRAPH_SPATIAL_CARRIERMOBILITIES
+
+            MENUITEM "Energy Bands",                ID_GRAPH_SPATIAL_ENERGYBANDS
+
+            MENUITEM "Carrier Velocities",          ID_GRAPH_SPATIAL_CARRIERVELOCITIES
+
+            MENUITEM "Diffusion Length",            ID_GRAPH_SPATIAL_DIFFUSIONLENGTH
+
+        END
+        POPUP "&Temporal"
+        BEGIN
+            MENUITEM "Auxiliary",                   ID_GRAPH_TEMPORAL_AUXILIARY
+
+            MENUITEM "Base Current",                ID_GRAPH_TEMPORAL_BASECURRENT
+
+            MENUITEM "Base Voltage",                ID_GRAPH_TEMPORAL_BASEVOLTAGE
+
+            MENUITEM "Base I-V",                    ID_GRAPH_TEMPORAL_BASEIV
+            MENUITEM "Base I-V / Power",            ID_GRAPH_TEMPORAL_BASEIVPOWER
+
+            MENUITEM "Collector Current",           ID_GRAPH_TEMPORAL_COLLECTORCURRENT
+
+            MENUITEM "Collector Voltage",           ID_GRAPH_TEMPORAL_COLLECTORVOLTAGE
+
+            MENUITEM "Collector I-V",               ID_GRAPH_TEMPORAL_COLLECTORIV
+
+            MENUITEM "Collector I-V / Power",       ID_GRAPH_TEMPORAL_COLLECTORIVPOWER
+
+            MENUITEM "Shunt Element Current",       ID_GRAPH_TEMPORAL_SHUNTELEMENTCURRENT
+
+            MENUITEM "Shunt Element Voltage",       ID_GRAPH_TEMPORAL_SHUNTELEMENTVOLTAGE
+
+            MENUITEM "Quantum Efficiency",          ID_GRAPH_TEMPORAL_QUANTUMEFF
+
+        END
+        MENUITEM "&Defined...",                 ID_GRAPH_DEFINED
+        MENUITEM "&Auxiliary...",               ID_GRAPH_AUX
+        MENUITEM "E&xperimental...",            ID_GRAPH_EXPERIMENTAL
+        MENUITEM SEPARATOR
+        MENUITEM "&Previous history graph\tPgUp", ID_GRAPH_HISTORYPREVIOUS
+        MENUITEM "&Next history graph\tPgDn",   ID_GRAPH_HISTORYNEXT
+        MENUITEM "Retain &zoom for history graphs", 
+                                                ID_OPTIONS_AUTOSCALEHISTORYGRAPHS
+        , CHECKED
+        MENUITEM "Reset &history graphs",       ID_GRAPH_HISTORYRESET
+        MENUITEM SEPARATOR
+        MENUITEM "D&efault Graphs",             ID_GRAPH_DEFAULTGRAPHS
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy Graph Data\tCtrl+C",    ID_EDIT_COPY
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Parameters",                 ID_VIEW_PARAMETERS
+        MENUITEM "&4 Graphs",                   ID_VIEW_FOURGRAPHS, CHECKED
+        MENUITEM "&Interactive Graph",          ID_VIEW_INTERACTIVEGRAPH
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR, CHECKED
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR, CHECKED
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "File &Locations...",          ID_OPTIONS_FILELOCATIONS
+        MENUITEM "&Store Node Data",            ID_OPTIONS_STORENODEDATA
+        , CHECKED
+        MENUITEM "Device &Update",              ID_OPTIONS_DEVICEUPDATE
+        , CHECKED
+        MENUITEM "&Font",                       ID_SELECTPARMFONT
+        MENUITEM "Display &Options",            ID_OPTIONS_DISPLAY
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About PC1D...",              ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_COMPUTE_RUN,         VIRTKEY, NOINVERT
+    VK_F5,          ID_COMPUTE_SINGLESTEP,  VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_COMPUTE_STOP,        VIRTKEY, ALT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  30, 30, 224, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PC1D"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PC1D Version 5.9",IDC_STATIC,40,10,119,8
+    LTEXT           "Copyright © 2003 University of New South Wales\nPaul A. Basore, Donald A. Clugston",
+                    IDC_STATIC,40,25,162,18
+    DEFPUSHBUTTON   "OK",IDOK,166,6,41,14,WS_GROUP
+    LTEXT           "Greg Thorson - Node placement, matrix inversion",
+                    IDC_STATIC,28,58,158,8
+    LTEXT           "Building on contributions to previous versions by",
+                    IDC_STATIC,19,47,156,8
+    LTEXT           "Diane Rover, Barry Hansen, Greg Anderson - User interface",
+                    IDC_STATIC,27,82,194,8
+    LTEXT           "Arlynn Smith - Material data for III-V compounds",
+                    IDC_STATIC,28,70,154,8
+END
+
+IDD_TEMPERATURE DIALOG DISCARDABLE  30, 30, 155, 42
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Temperature"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,99,4,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,23,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_TEMPSS,5,14,42,13,ES_AUTOHSCROLL
+    CONTROL         "kelvin",IDC_KELVIN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,55,7,32,10
+    CONTROL         "Celsius",IDC_CELSIUS,"Button",BS_AUTORADIOBUTTON,55,21,
+                    35,10
+END
+
+IDD_ILLUMINATION_INTENSITY DIALOG DISCARDABLE  30, 30, 209, 195
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Intensity"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Enable",IDC_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,24,34,10
+    LTEXT           "Source Position:",IDC_STATIC7,57,53,52,8
+    CONTROL         "&Front",IDC_FRONT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,112,52,28,10
+    CONTROL         "&Rear",IDC_BACK,"Button",BS_AUTORADIOBUTTON,112,63,27,
+                    10
+    GROUPBOX        "               ",IDC_STATIC,8,86,194,65,WS_GROUP
+    GROUPBOX        "                 ",IDC_STATIC,8,154,194,31
+    CONTROL         "&Source",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,85,42,10
+    CONTROL         "E&xternal",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,14,
+                    153,49,10
+    EDITTEXT        IDC_ILLUMINATION_INTENSITYSS,105,96,42,13,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDC_ILLUMINATION_INTENSITYTR1,105,117,42,13,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ILLUMINATION_INTENSITYTR2,105,133,42,13,
+                    ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "&Open",IDC_OPEN,12,166,50,14,WS_GROUP
+    LTEXT           "(No file selected)",IDC_FILENAME,68,168,114,8
+    LTEXT           "W/cm2",IDC_STATIC4,150,98,25,8
+    LTEXT           "W/cm2",IDC_STATIC5,150,119,25,8
+    LTEXT           "W/cm2",IDC_STATIC6,150,135,25,8
+    LTEXT           "Steady State",IDC_STATIC1,63,98,41,8
+    LTEXT           "Transient Initial Intensity",IDC_STATIC2,28,119,76,8
+    LTEXT           "Transient Final Intensity",IDC_STATIC3,28,135,74,8
+END
+
+IDD_THICKNESS DIALOG DISCARDABLE  30, 30, 118, 44
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Region Thickness"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,64,4,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,64,21,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_THICK,4,9,42,13,ES_AUTOHSCROLL
+    LTEXT           "um",IDC_STATIC,49,12,13,8
+END
+
+IDD_MOBILITY DIALOG DISCARDABLE  30, 30, 163, 265
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Mobility Model (300 K)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,3,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,84,3,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_ELEC_MAX,39,30,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_MAJ_MIN,39,55,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_MAJ_NREF,39,70,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_MAJ_ALPHA,39,84,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_MIN_MIN,39,114,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_MIN_NREF,39,128,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_MIN_ALPHA,39,143,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_B1,39,173,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_B2,39,188,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_B3,39,203,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_B4,39,218,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ELEC_VMAX,39,239,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_MAX,88,30,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_MAJ_MIN,88,55,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_MAJ_NREF,88,70,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_MAJ_ALPHA,88,84,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_MIN_MIN,88,114,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_MIN_NREF,88,128,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_MIN_ALPHA,88,143,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_B1,89,173,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_B2,89,188,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_B3,89,203,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_B4,89,218,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLE_VMAX,89,239,42,13,ES_AUTOHSCROLL
+    RTEXT           "Minimum",IDC_STATIC,7,58,30,8
+    RTEXT           "Nref",IDC_STATIC,7,73,30,8
+    RTEXT           "alpha",IDC_STATIC,7,87,30,8
+    RTEXT           "Maximum",IDC_STATIC,7,31,30,8
+    RTEXT           "beta1",IDC_STATIC,7,174,30,8
+    RTEXT           "beta2",IDC_STATIC,7,191,30,8
+    RTEXT           "beta3",IDC_STATIC,7,207,30,8
+    RTEXT           "beta4",IDC_STATIC,7,221,30,8
+    RTEXT           "Maximum velocity",IDC_STATIC,6,236,30,17
+    RTEXT           "Minimum",IDC_STATIC,7,116,30,8
+    RTEXT           "Nref",IDC_STATIC,7,131,30,8
+    RTEXT           "alpha",IDC_STATIC,7,146,30,8
+    LTEXT           "cm/s",IDC_STATIC,133,242,16,8
+    LTEXT           "cm2/Vs",IDC_STATIC,131,31,27,8
+    LTEXT           "cm2/Vs",IDC_STATIC,131,58,25,8
+    LTEXT           "cm-3",IDC_STATIC,131,73,25,8
+    LTEXT           "cm2/Vs",IDC_STATIC,131,116,25,8
+    LTEXT           "cm-3",IDC_STATIC,131,131,25,8
+    LTEXT           "...Majority Carrier...",IDC_STATIC,3,45,63,8
+    LTEXT           "Electrons",IDC_STATIC,45,20,30,7
+    LTEXT           "Holes",IDC_STATIC,99,20,20,8
+    LTEXT           "...Minority Carrier...",IDC_STATIC,3,101,63,8
+    LTEXT           "...Thermal Model...",IDC_STATIC,3,159,66,8
+END
+
+IDD_FIXEDMOBILITY DIALOG DISCARDABLE  30, 30, 167, 62
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Fixed Mobility"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,85,6,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_ELECTRONS,8,38,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOLES,89,38,42,13,ES_AUTOHSCROLL
+    GROUPBOX        "Electrons",IDC_STATIC,3,25,78,32
+    GROUPBOX        "Holes",IDC_STATIC,85,25,78,32
+    LTEXT           "cm2/Vs",IDC_STATIC,52,41,28,8
+    LTEXT           "cm2/Vs",IDC_STATIC,133,41,28,8
+END
+
+IDD_PERMITTIVITY DIALOG DISCARDABLE  30, 30, 112, 43
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Dielectric Constant"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,53,4,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,53,21,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_PERMITTIVITY,5,13,42,13,ES_AUTOHSCROLL
+END
+
+IDD_BANDSTRUCTURE DIALOG DISCARDABLE  30, 30, 177, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Band Structure"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,120,10,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,120,27,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_BANDGAP,58,5,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AFFINITY,58,21,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NCNV,58,37,42,13,ES_AUTOHSCROLL
+    RTEXT           "Band Gap",IDC_STATIC,3,7,52,8
+    RTEXT           "Electron Affinity",IDC_STATIC,3,23,52,8
+    RTEXT           "Nc/Nv Ratio",IDC_STATIC,3,39,52,8
+    GROUPBOX        "Intrinsic Concentration",IDC_STATIC,4,53,112,62
+    RTEXT           "200 K",IDC_STATIC,15,70,21,8
+    RTEXT           "300 K",IDC_STATIC,15,85,21,8
+    RTEXT           "400 K",IDC_STATIC,15,100,21,8
+    LTEXT           "cm-3",IDC_STATIC,91,70,22,8
+    LTEXT           "cm-3",IDC_STATIC,91,85,22,8
+    LTEXT           "cm-3",IDC_STATIC,91,100,22,8
+    LTEXT           "eV",IDC_STATIC,102,7,15,8
+    LTEXT           "eV",IDC_STATIC,102,23,15,8
+    EDITTEXT        IDC_NI200,42,67,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NI300,42,82,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NI400,42,97,42,13,ES_AUTOHSCROLL
+END
+
+IDD_BGNMODEL DIALOG DISCARDABLE  30, 30, 198, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Bandgap Narrowing Model"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,46,9,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,102,9,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_N_NREF,32,38,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_N_SLOPE,32,57,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P_NREF,128,38,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_P_SLOPE,128,57,42,13,ES_AUTOHSCROLL
+    GROUPBOX        "n-type",IDC_STATIC,7,27,89,49
+    GROUPBOX        "p-type",IDC_STATIC,102,27,89,49
+    RTEXT           "onset",IDC_STATIC,10,40,21,8
+    RTEXT           "slope",IDC_STATIC,10,59,21,8
+    LTEXT           "cm-3",IDC_STATIC,75,41,18,8
+    LTEXT           "meV",IDC_STATIC,75,59,18,8
+    RTEXT           "onset",IDC_STATIC,106,41,21,8
+    RTEXT           "slope",IDC_STATIC,106,59,21,8
+    LTEXT           "cm-3",IDC_STATIC,171,41,17,8
+    LTEXT           "meV",IDC_STATIC,171,59,17,8
+END
+
+IDD_REFRACTION DIALOG DISCARDABLE  30, 30, 177, 195
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Refractive Index"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "             ",IDC_STATIC,4,7,98,28
+    GROUPBOX        "                 ",IDC_STATIC,4,41,167,33
+    CONTROL         "&Fixed",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,11,6,39,10
+    CONTROL         "&External",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,10,40,47,10
+    EDITTEXT        IDC_INDEX,45,17,42,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Open",IDC_OPEN,8,54,50,14
+    LTEXT           "(No file selected)",IDC_FILENAME,62,57,101,8
+    LTEXT           "Value:",IDC_STATIC1,17,20,22,8
+END
+
+IDD_ABSORPTION DIALOG DISCARDABLE  30, 30, 209, 196
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Intrinsic Absorption"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "                          ",IDC_STATIC,2,3,195,159
+    GROUPBOX        "                 ",IDC_STATIC,2,163,195,29
+    CONTROL         "&Model (300K)",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,8,3,64,10
+    CONTROL         "E&xternal",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,7,163,
+                    47,10
+    EDITTEXT        IDC_ED1,8,26,42,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_ED2,8,43,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AD1,68,26,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AD2,68,43,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EI1,8,97,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EI2,8,113,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EP1,70,76,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A11,70,97,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A21,70,113,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EP2,115,76,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A12,115,97,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_A22,115,113,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TCOEFF,40,145,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TOFFSET,136,145,42,13,ES_AUTOHSCROLL
+    LTEXT           "eV",IDC_STATIC2,52,29,12,8
+    LTEXT           "cm-1",IDC_STATIC4,112,29,18,8
+    LTEXT           "eV",IDC_STATIC3,52,45,12,8
+    LTEXT           "cm-1",IDC_STATIC5,112,45,18,8
+    LTEXT           "eV",IDC_STATIC_B1,52,100,15,8
+    LTEXT           "eV",IDC_STATIC_B2,52,115,15,8
+    LTEXT           "meV",IDC_STATIC9,158,79,17,8
+    LTEXT           "cm-1",IDC_STATIC_B5,158,99,17,8
+    LTEXT           "cm-1",IDC_STATIC_B6,158,115,17,8
+    RTEXT           "Coefficient",IDC_STATIC_B8,4,147,33,8
+    LTEXT           "meV/K",IDC_STATIC_B9,83,148,22,8
+    RTEXT           "Offset",IDC_STATIC_B10,115,148,19,8
+    LTEXT           "K",IDC_STATIC_B11,180,148,8,8
+    RTEXT           "Phonon Energies:",IDC_STATIC7,14,78,55,8
+    LTEXT           "...Indirect Gaps...",IDC_STATIC6,64,62,59,8
+    LTEXT           "...Direct Gaps...",IDC_STATIC1,67,13,54,8
+    LTEXT           "...Temperature Model...",IDC_STATIC_B7,55,132,78,8
+    PUSHBUTTON      "&Open",IDC_OPEN,7,175,50,14,WS_GROUP
+    LTEXT           "(No file selected)",IDC_FILENAME,63,177,127,8
+END
+
+IDD_BKGNDDOPING DIALOG DISCARDABLE  30, 30, 179, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Background Doping"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,113,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,22,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_DOPING,4,14,42,13,ES_AUTOHSCROLL
+    CONTROL         "n-type",IDC_NTYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,71,7,35,10
+    CONTROL         "p-type",IDC_PTYPE,"Button",BS_AUTORADIOBUTTON,71,23,35,
+                    10
+    EDITTEXT        IDC_RESISTIVITY,71,49,42,13,ES_AUTOHSCROLL
+    LTEXT           "cm-3",IDC_STATIC,48,17,18,8
+    RTEXT           "Resistivity",IDC_STATIC,8,52,61,8
+    LTEXT           "ohm-cm",IDC_STATIC,114,52,27,8
+    RTEXT           "Electrons",IDC_STATIC,6,85,32,8
+    RTEXT           "Holes",IDC_STATIC,8,101,30,8
+    EDITTEXT        IDC_EMOB,39,83,42,13,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HMOB,39,99,42,13,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    CTEXT           "Mobility",IDC_STATIC,45,71,30,8
+    EDITTEXT        IDC_EDIF,109,83,42,13,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HDIF,109,99,42,13,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    CTEXT           "Diffusivity",IDC_STATIC,113,72,33,8
+    LTEXT           "cm2/Vs",IDC_STATIC,82,85,25,8
+    LTEXT           "cm2/Vs",IDC_STATIC,82,101,25,8
+    LTEXT           "cm2/s",IDC_STATIC,152,85,20,8
+    LTEXT           "cm2/s",IDC_STATIC,152,101,20,8
+    GROUPBOX        "At 300 K",IDC_STATIC,3,39,173,79
+END
+
+IDD_DIFFUSION DIALOG DISCARDABLE  30, 30, 170, 197
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Diffusion Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,113,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,113,23,50,14,NOT WS_TABSTOP
+    CONTROL         "Enable",IDC_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,15,35,10
+    CONTROL         "n-type",IDC_NTYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,54,8,35,10
+    CONTROL         "p-type",IDC_PTYPE,"Button",BS_AUTORADIOBUTTON,54,23,35,
+                    10
+    CONTROL         "Uniform",IDC_UNIFORM,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,115,52,46,10
+    CONTROL         "Exponential",IDC_EXPONENTIAL,"Button",
+                    BS_AUTORADIOBUTTON,115,65,57,10
+    CONTROL         "Gaussian",IDC_GAUSSIAN,"Button",BS_AUTORADIOBUTTON,115,
+                    78,49,10
+    CONTROL         "Erfc",IDC_ERFC,"Button",BS_AUTORADIOBUTTON,115,91,37,10
+    EDITTEXT        IDC_NPEAK,49,49,42,13,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "cm-3",IDC_STATIC4,92,51,17,8
+    EDITTEXT        IDC_DEPTH,49,68,42,13,ES_AUTOHSCROLL
+    LTEXT           "um",IDC_STATIC5,92,70,17,8
+    EDITTEXT        IDC_XPEAK,49,87,42,13,ES_AUTOHSCROLL
+    LTEXT           "um",IDC_STATIC6,92,89,17,8
+    EDITTEXT        IDC_SHEETRHO,67,128,42,13,ES_AUTOHSCROLL
+    LTEXT           "ohms/square",IDC_STATIC_B5,110,130,45,8
+    EDITTEXT        IDC_JUNCTION,67,151,42,13,ES_AUTOHSCROLL
+    LTEXT           "um",IDC_STATIC_B3,110,154,30,8
+    RTEXT           "Peak Doping",IDC_STATIC1,4,51,42,8
+    GROUPBOX        "Profile",IDC_STATIC7,113,40,54,68
+    RTEXT           "Depth Factor",IDC_STATIC2,3,70,43,8
+    RTEXT           "Peak Position",IDC_STATIC3,1,89,45,8
+    GROUPBOX        "Calculated",IDC_STATIC_B1,1,109,166,82
+    RTEXT           "Junction Depth",IDC_STATIC_B2,7,154,58,8
+    RTEXT           "Sheet Resistance\nat 300 K",IDC_STATIC_B4,7,126,58,21
+    RTEXT           "For background doping density",IDC_STATIC_B6,3,171,98,8
+    EDITTEXT        IDC_BKDOPING,103,169,42,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "cm-3",IDC_STATIC_B7,148,171,16,8
+END
+
+IDD_BULKRECOMBINATION DIALOG DISCARDABLE  30, 30, 175, 150
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Bulk Recombination"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TAUN,50,6,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TAUP,50,22,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ET,50,38,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LLITAU,66,71,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIFFLENGTH,66,90,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TYPE,27,109,34,13,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_BKGNDDOPING,88,109,42,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    RTEXT           "tau-n",IDC_STATIC,18,8,30,8
+    RTEXT           "tau-p",IDC_STATIC,18,24,30,8
+    RTEXT           "Et (vs. Ei)",IDC_STATIC,17,41,31,8
+    LTEXT           "us",IDC_STATIC,94,9,11,8
+    LTEXT           "us",IDC_STATIC,94,25,10,8
+    LTEXT           "eV",IDC_STATIC,94,42,12,8
+    GROUPBOX        "At 300 K",IDC_STATIC,5,58,155,70
+    RTEXT           "Net LLI tau",IDC_STATIC,27,73,36,8
+    LTEXT           "us",IDC_STATIC,111,73,10,8
+    RTEXT           "Diffusion Length",IDC_STATIC,7,91,56,8
+    LTEXT           "um",IDC_STATIC,111,91,14,8
+    CTEXT           "doping",IDC_STATIC,62,110,24,8
+    LTEXT           "cm-3",IDC_STATIC,133,110,19,8
+    RTEXT           "For",IDC_STATIC,8,110,16,8
+END
+
+IDD_SURFRECOMBINATION DIALOG DISCARDABLE  30, 30, 173, 150
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Surface Recombination"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SN,50,6,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SP,50,22,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ET,50,38,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LLIS,66,71,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JO,66,90,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TYPE,26,109,38,13,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_DOPING,93,109,42,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    CONTROL         "Beyond LLI maintain Jo rather than S",IDC_USEJO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,133,154,10
+    RTEXT           "S-n",IDC_STATIC,35,8,12,8
+    RTEXT           "S-p",IDC_STATIC,35,24,12,8
+    RTEXT           "Et (vs. Ei)",IDC_STATIC,16,40,31,8
+    LTEXT           "cm/s",IDC_STATIC,95,8,18,8
+    LTEXT           "cm/s",IDC_STATIC,95,24,17,8
+    LTEXT           "eV",IDC_STATIC,95,40,16,8
+    GROUPBOX        "At 300 K",IDC_STATIC,5,58,155,70
+    RTEXT           "Net LLI S",IDC_STATIC,31,74,32,8
+    LTEXT           "cm/s",IDC_STATIC,110,74,20,8
+    RTEXT           "Equivalent Jo",IDC_STATIC,19,93,45,8
+    LTEXT           "A/cm2",IDC_STATIC,110,93,25,8
+    RTEXT           "For",IDC_STATIC,9,111,15,8
+    CTEXT           "doping",IDC_STATIC,66,111,25,8
+    LTEXT           "cm-3",IDC_STATIC,137,111,18,8
+END
+
+IDD_AREA DIALOG DISCARDABLE  30, 30, 149, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Device Area"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,94,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,94,23,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_AREA,4,15,42,13,ES_AUTOHSCROLL
+    CONTROL         "cm2",IDC_CM2,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,49,4,33,10
+    CONTROL         "mm2",IDC_MM2,"Button",BS_AUTORADIOBUTTON,49,17,35,10
+    CONTROL         "um2",IDC_UM2,"Button",BS_AUTORADIOBUTTON,49,30,35,10
+END
+
+IDD_TEXTURE DIALOG DISCARDABLE  30, 30, 225, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Surface Texture"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,82,50,14
+    CONTROL         "Textured",IDC_CHECKFRONTTEXTURE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,28,20,40,10
+    EDITTEXT        IDC_FRONTANGLE,35,35,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRONTDEPTH,35,55,42,13,ES_AUTOHSCROLL
+    CONTROL         "Textured",IDC_CHECKREARTEXTURE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,21,40,10
+    EDITTEXT        IDC_REARANGLE,144,35,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REARDEPTH,144,55,42,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,120,82,50,14,NOT WS_TABSTOP
+    RTEXT           "Angle",IDC_STATICF1,8,38,24,8
+    RTEXT           "Depth",IDC_STATICF3,8,58,24,8
+    LTEXT           "degrees",IDC_STATICF2,79,38,27,8
+    LTEXT           "um",IDC_STATICF4,79,58,11,8
+    GROUPBOX        "Front surface",IDC_STATIC,5,6,102,66
+    RTEXT           "Angle",IDC_STATICR1,117,38,24,8
+    RTEXT           "Depth",IDC_STATICR3,117,58,24,8
+    LTEXT           "degrees",IDC_STATICR2,188,38,27,8
+    LTEXT           "um",IDC_STATICR4,188,58,11,8
+    GROUPBOX        "Rear surface",IDC_STATIC,114,6,102,66
+END
+
+IDD_INTERNALREFLECTANCE DIALOG DISCARDABLE  30, 30, 140, 185
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Internal Reflectance"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FRONT1,78,39,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRONT2,78,57,42,13,ES_AUTOHSCROLL
+    CONTROL         "Specular",IDC_FRONTSPEC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,28,77,40,10
+    CONTROL         "Diffuse",IDC_FRONTDIFF,"Button",BS_AUTORADIOBUTTON,78,
+                    77,35,10
+    EDITTEXT        IDC_REAR1,78,108,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REAR2,78,126,42,13,ES_AUTOHSCROLL
+    CONTROL         "Specular",IDC_REARSPEC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,28,146,40,10
+    CONTROL         "Diffuse",IDC_REARDIFF,"Button",BS_AUTORADIOBUTTON,78,
+                    146,35,10
+    GROUPBOX        "Front Surface",IDC_STATIC,4,25,133,66
+    RTEXT           "First bounce",IDC_STATIC,33,42,42,8
+    LTEXT           "%",IDC_STATIC,123,42,9,8
+    RTEXT           "Subsequent bounce",IDC_STATIC,8,60,67,8
+    LTEXT           "%",IDC_STATIC,123,60,9,8
+    GROUPBOX        "Rear Surface",IDC_STATIC,4,94,133,66
+    RTEXT           "First bounce",IDC_STATIC,33,111,42,8
+    LTEXT           "%",IDC_STATIC,123,111,9,8
+    RTEXT           "Subsequent bounce",IDC_STATIC,8,129,67,8
+    LTEXT           "%",IDC_STATIC,123,129,9,8
+END
+
+IDD_ELEMENTS DIALOG DISCARDABLE  30, 30, 244, 250
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Internal Shunt Elements"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,9,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,66,6,50,14,NOT WS_TABSTOP
+    CONTROL         "Enable",IDC_ENABLE1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,30,39,10
+    EDITTEXT        IDC_VALUE1,7,47,42,13,ES_AUTOHSCROLL
+    CONTROL         "Conductor (siemens)",IDC_SHUNT1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,52,31,82,10
+    CONTROL         "Diode (amps)",IDC_DIODE1,"Button",BS_AUTORADIOBUTTON,52,
+                    47,79,10
+    CONTROL         "Capacitor (farads)",IDC_CAP1,"Button",
+                    BS_AUTORADIOBUTTON,52,63,73,10
+    EDITTEXT        IDC_XA1,179,30,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XC1,179,47,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_N1,179,63,42,13,ES_AUTOHSCROLL
+    CONTROL         "Enable",IDC_ENABLE2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,86,39,10
+    EDITTEXT        IDC_VALUE2,7,103,42,13,ES_AUTOHSCROLL
+    CONTROL         "Conductor (siemens)",IDC_SHUNT2,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,52,87,82,10
+    CONTROL         "Diode (amps)",IDC_DIODE2,"Button",BS_AUTORADIOBUTTON,52,
+                    103,79,10
+    CONTROL         "Capacitor (farads)",IDC_CAP2,"Button",
+                    BS_AUTORADIOBUTTON,52,119,73,10
+    EDITTEXT        IDC_XA2,179,86,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XC2,179,103,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_N2,179,119,42,13,ES_AUTOHSCROLL
+    CONTROL         "Enable",IDC_ENABLE3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,142,39,10
+    EDITTEXT        IDC_VALUE3,7,159,42,13,ES_AUTOHSCROLL
+    CONTROL         "Conductor (siemens)",IDC_SHUNT3,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,52,143,82,10
+    CONTROL         "Diode (amps)",IDC_DIODE3,"Button",BS_AUTORADIOBUTTON,52,
+                    159,79,10
+    CONTROL         "Capacitor (farads)",IDC_CAP3,"Button",
+                    BS_AUTORADIOBUTTON,52,175,73,10
+    EDITTEXT        IDC_XA3,179,142,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XC3,179,159,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_N3,179,175,42,13,ES_AUTOHSCROLL
+    CONTROL         "Enable",IDC_ENABLE4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,198,39,10
+    EDITTEXT        IDC_VALUE4,7,215,42,13,ES_AUTOHSCROLL
+    CONTROL         "Conductor (siemens)",IDC_SHUNT4,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,52,199,82,10
+    CONTROL         "Diode (amps)",IDC_DIODE4,"Button",BS_AUTORADIOBUTTON,52,
+                    215,79,10
+    CONTROL         "Capacitor (farads)",IDC_CAP4,"Button",
+                    BS_AUTORADIOBUTTON,52,231,73,10
+    EDITTEXT        IDC_XA4,180,198,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_XC4,180,215,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_N4,180,231,42,13,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,4,23,235,55
+    LTEXT           "um",IDC_STATIC,224,33,12,8
+    LTEXT           "um",IDC_STATIC,224,50,12,8
+    CTEXT           "Contact locations measured from front.",IDC_STATIC,142,
+                    3,72,18
+    RTEXT           "anode",IDC_STATIC,150,33,27,8
+    RTEXT           "cathode",IDC_STATIC,150,50,27,8
+    RTEXT           "Diode ideality",IDC_STATIC,130,66,47,8
+    GROUPBOX        "",IDC_STATIC,4,79,235,55
+    LTEXT           "um",IDC_STATIC,224,89,12,8
+    LTEXT           "um",IDC_STATIC,224,106,12,8
+    RTEXT           "anode",IDC_STATIC,150,89,27,8
+    RTEXT           "cathode",IDC_STATIC,150,106,27,8
+    RTEXT           "Diode ideality",IDC_STATIC,130,122,47,8
+    GROUPBOX        "",IDC_STATIC,4,135,235,55
+    LTEXT           "um",IDC_STATIC,224,145,12,8
+    LTEXT           "um",IDC_STATIC,224,162,12,8
+    RTEXT           "anode",IDC_STATIC,150,145,27,8
+    RTEXT           "cathode",IDC_STATIC,150,162,27,8
+    RTEXT           "Diode ideality",IDC_STATIC,130,178,47,8
+    GROUPBOX        "",IDC_STATIC,4,191,235,55
+    LTEXT           "um",IDC_STATIC,224,201,12,8
+    LTEXT           "um",IDC_STATIC,224,218,12,8
+    RTEXT           "anode",IDC_STATIC,151,201,27,8
+    RTEXT           "cathode",IDC_STATIC,151,218,27,8
+    RTEXT           "Diode ideality",IDC_STATIC,131,234,47,8
+END
+
+IDD_PATHS DIALOG DISCARDABLE  30, 30, 206, 221
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "PC1D External File Paths"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,64,3,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,3,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_PRM,87,21,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEV,87,36,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAT,87,51,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EXC,87,66,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ABS,87,81,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DOP,87,96,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INR,87,111,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REF,87,126,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GEN,87,141,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LGT,87,156,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPC,87,171,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VLT,87,186,88,13,ES_AUTOHSCROLL
+    LTEXT           "\\*.prm",IDC_STATIC,179,23,21,8
+    RTEXT           "Problem parameters",IDC_STATIC,2,23,83,8
+    LTEXT           "\\*.dev",IDC_STATIC,179,38,21,8
+    RTEXT           "Device parameters",IDC_STATIC,2,38,83,8
+    LTEXT           "\\*.mat",IDC_STATIC,179,53,21,8
+    RTEXT           "Material parameters",IDC_STATIC,2,53,83,8
+    LTEXT           "\\*.exc",IDC_STATIC,179,68,21,8
+    RTEXT           "Excitation parameters",IDC_STATIC,2,68,83,8
+    LTEXT           "\\*.abs",IDC_STATIC,179,83,21,8
+    RTEXT           "Optical absorption",IDC_STATIC,2,83,83,8
+    LTEXT           "\\*.dop",IDC_STATIC,179,98,21,8
+    RTEXT           "Doping profile",IDC_STATIC,2,98,83,8
+    LTEXT           "\\*.inr",IDC_STATIC,179,113,21,8
+    RTEXT           "Index of refraction",IDC_STATIC,2,113,83,8
+    LTEXT           "\\*.ref",IDC_STATIC,179,128,21,8
+    RTEXT           "Surface reflectance",IDC_STATIC,2,128,83,8
+    LTEXT           "\\*.gen",IDC_STATIC,179,143,21,8
+    RTEXT           "Photogeneration profile",IDC_STATIC,2,143,83,8
+    LTEXT           "\\*.lgt",IDC_STATIC,179,158,21,8
+    RTEXT           "Light source intensity",IDC_STATIC,2,158,83,8
+    LTEXT           "\\*.spc",IDC_STATIC,179,173,21,8
+    RTEXT           "Light source spectrum",IDC_STATIC,2,173,83,8
+    LTEXT           "\\*.vlt",IDC_STATIC,179,188,21,8
+    RTEXT           "Voltage source",IDC_STATIC,2,188,83,8
+    EDITTEXT        IDC_BATCH,87,202,88,13,ES_AUTOHSCROLL
+    LTEXT           "\\*.txt",IDC_STATIC,179,204,21,8
+    RTEXT           "Batch parameters",IDC_STATIC,2,204,83,8
+END
+
+IDD_NUMERIC DIALOG DISCARDABLE  30, 30, 168, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Numerical Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,109,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,109,23,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_SIZEFACTOR,55,8,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ERROR,55,29,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLAMP,55,50,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXTIME,55,73,42,13,ES_AUTOHSCROLL
+    CONTROL         "Phi",IDC_PHI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,
+                    55,35,10
+    CONTROL         "Psi",IDC_PSI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,117,
+                    71,35,10
+    CONTROL         "Equilibrium",IDC_EQ,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,102,49,10
+    CONTROL         "Steady-state",IDC_SS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,102,53,10
+    CONTROL         "Transient",IDC_TR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    117,102,43,10
+    RTEXT           "Element\nsize factor",IDC_STATIC,15,6,37,18
+    RTEXT           "Normalized\nerror limit",IDC_STATIC,13,29,39,18
+    RTEXT           "Normalized\npotential clamp",IDC_STATIC,1,49,51,19
+    RTEXT           "Maximum\nTime (sec)",IDC_STATIC,2,71,50,18
+    GROUPBOX        "Renode",IDC_STATIC,3,89,161,32
+    GROUPBOX        "Clamping",IDC_STATIC,106,42,57,46
+    CONTROL         "Display graphs after every iteration",
+                    IDC_EVERYITERATION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    21,128,125,10
+    CONTROL         "Total velocity saturation",IDC_VELSAT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,145,128,10
+END
+
+IDD_DESCRIPTION DIALOG DISCARDABLE  30, 30, 232, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "File Description"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,57,72,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,128,72,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT,3,5,224,63,ES_MULTILINE
+END
+
+IDD_USERGRAPH DIALOG DISCARDABLE  30, 30, 160, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "User-Defined Graph"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,86,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,26,50,14,NOT WS_TABSTOP
+    CONTROL         "Spatial",IDC_SPATIAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,9,9,35,10
+    CONTROL         "Temporal",IDC_TEMPORAL,"Button",BS_AUTORADIOBUTTON,9,25,
+                    43,10
+    COMBOBOX        IDC_ABSCISSA,41,48,110,209,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE1,41,67,110,191,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE2,41,86,110,171,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE3,41,105,110,153,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CURVE4,41,124,110,135,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_GRAPHTITLE,62,176,90,13,ES_AUTOHSCROLL
+    RTEXT           "Abscissa",IDC_STATIC,2,50,34,8
+    RTEXT           "Curve 1",IDC_STATIC,2,69,34,8
+    RTEXT           "Curve 4",IDC_STATIC,2,126,34,8
+    RTEXT           "Curve 2",IDC_STATIC,2,88,34,8
+    RTEXT           "Curve 3",IDC_STATIC,2,107,34,8
+    RTEXT           "Graph Title",IDC_STATIC,19,178,39,8
+    CONTROL         "Use Log scale for X axis (abscissa)",IDC_XSCALE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,145,125,10
+    CONTROL         "Use Log scale for Y axis",IDC_YSCALE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,158,92,10
+    EDITTEXT        IDC_YLABEL,62,193,90,13,ES_AUTOHSCROLL
+    LTEXT           "Y axis label",IDC_STATIC,23,195,36,8
+END
+
+IDD_AUXDATA DIALOG DISCARDABLE  30, 30, 162, 97
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Auxiliary Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,25,4,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,4,50,14,NOT WS_TABSTOP
+    COMBOBOX        IDC_AUXDATA,44,41,104,168,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Spatial Function",IDC_STATIC,7,39,32,19
+    RTEXT           "Distance from Front",IDC_STATIC,8,63,37,19
+    EDITTEXT        IDC_AUXPOSITION,50,64,42,13,ES_AUTOHSCROLL
+    LTEXT           "µm",IDC_STATIC,95,67,14,8
+    GROUPBOX        "Auxiliary",IDC_STATIC,6,26,151,60
+END
+
+IDD_SURFACE DIALOG DISCARDABLE  30, 30, 165, 70
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Surface"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Neutral",IDC_RADIONEUTRAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,5,7,35,10
+    CONTROL         "Charge",IDC_RADIOCHARGE,"Button",BS_AUTORADIOBUTTON,5,
+                    23,45,10
+    CONTROL         "Barrier",IDC_RADIOBARRIER,"Button",BS_AUTORADIOBUTTON,5,
+                    40,40,10
+    EDITTEXT        IDC_CHARGE,51,21,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BARRIER,51,39,42,13,ES_AUTOHSCROLL
+    LTEXT           "cm-2",IDC_STATIC_C1,96,24,17,8
+    LTEXT           "eV",IDC_STATIC_B1,96,42,18,8
+    CTEXT           "Positive->Bands bend downward",IDC_STATIC_B2,26,57,113,
+                    8
+END
+
+IDD_MODE DIALOG DISCARDABLE  30, 30, 159, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Excitation Mode"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,103,6,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,103,23,50,14,NOT WS_TABSTOP
+    GROUPBOX        "                    ",IDC_STATIC,10,39,134,69
+    CONTROL         "&Equilibrium",IDC_RADIOEQUILIBRIUM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,7,46,10
+    CONTROL         "&Steady State",IDC_RADIOSTEADYSTATE,"Button",
+                    BS_AUTORADIOBUTTON,18,22,53,10
+    CONTROL         "&Transient",IDC_RADIOTRANSIENT,"Button",
+                    BS_AUTORADIOBUTTON,18,37,49,10
+    EDITTEXT        IDC_TRAN_NUM,90,50,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRAN_STEP,90,68,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FIRSTSTEP,90,87,42,13,ES_AUTOHSCROLL
+    LTEXT           "&Number of time steps",IDC_STATIC1,18,52,70,8
+    LTEXT           "Time step si&ze",IDC_STATIC2,18,70,48,8,NOT WS_GROUP
+    LTEXT           "Time step at t=0",IDC_STATIC3,18,88,54,8,NOT WS_GROUP
+    LTEXT           "s",IDC_STATIC4,135,70,5,8,NOT WS_GROUP
+    LTEXT           "s",IDC_STATIC5,135,89,5,8,NOT WS_GROUP
+END
+
+IDD_ILLUMINATION DIALOG DISCARDABLE  30, 30, 209, 195
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Spectrum"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "                       ",IDC_STATIC,4,4,200,64
+    GROUPBOX        "                     ",IDC_STATIC,4,74,201,72
+    GROUPBOX        "                 ",IDC_STATIC,5,151,200,36
+    CONTROL         "&Monochrome",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,3,65,10
+    CONTROL         "&Black Body",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,10,
+                    73,57,10
+    CONTROL         "E&xternal",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,12,
+                    150,47,10
+    EDITTEXT        IDC_ILLUMINATION_LAMBDASS,102,14,42,13,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDC_ILLUMINATION_LAMBDATR1,102,34,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ILLUMINATION_LAMBDATR2,102,49,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEMPERATURE,16,109,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MINIMUM,143,95,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAXIMUM,143,110,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUMBER,143,127,42,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Open",IDC_OPEN,10,165,50,14
+    LTEXT           "(No file selected)",IDC_FILENAME,66,168,134,8
+    LTEXT           "nm",IDC_STATIC4,148,16,11,8
+    LTEXT           "Steady State wavelength",IDC_STATIC1,17,16,80,8
+    LTEXT           "nm",IDC_STATIC5,147,38,11,8
+    LTEXT           "Transient initial wavelength",IDC_STATIC2,11,36,86,8
+    LTEXT           "nm",IDC_STATIC6,148,52,11,8
+    LTEXT           "Transient final wavelength",IDC_STATIC3,12,50,84,8
+    LTEXT           "kelvin",IDC_STATIC_B2,62,112,21,8
+    LTEXT           "nm",IDC_STATIC_B7,187,98,12,8
+    LTEXT           "nm",IDC_STATIC_B8,187,113,13,8
+    LTEXT           "Minimum:",IDC_STATIC_B4,109,96,29,8
+    LTEXT           "Maximum:",IDC_STATIC_B5,109,112,31,8
+    LTEXT           "Number:",IDC_STATIC_B6,109,129,26,8
+    LTEXT           "Wavelength Range",IDC_STATIC_B3,114,82,64,8
+    LTEXT           "Source Temperature",IDC_STATIC_B1,14,95,67,8
+END
+
+IDD_REFLECTANCE DIALOG DISCARDABLE  30, 30, 197, 185
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Reflectance"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "             ",IDC_STATIC,7,6,182,26
+    GROUPBOX        "               ",IDC_STATIC,6,37,183,108
+    GROUPBOX        "                 ",IDC_STATIC,6,148,183,32
+    CONTROL         "&Fixed",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,13,4,39,10
+    CONTROL         "&Coated",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,12,36,
+                    43,10
+    CONTROL         "E&xternal",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,12,
+                    147,47,10
+    EDITTEXT        IDC_BROADBAND,120,47,42,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_OUTERTHICK,72,78,46,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OUTERINDEX,128,78,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MIDDLETHICK,72,93,46,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MIDDLEINDEX,128,93,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INNERTHICK,72,108,46,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INNERINDEX,128,108,42,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Open",IDC_OPEN,11,162,50,14
+    LTEXT           "%",IDC_STATIC1,96,16,8,8
+    LTEXT           "%",IDC_STATIC_B2,164,50,10,8
+    LTEXT           "Broadband Reflectance",IDC_STATIC_B1,41,50,76,8
+    RTEXT           "thickness (nm)",IDC_STATIC_B3,71,67,48,8
+    RTEXT           "index",IDC_STATIC_B4,136,67,20,8
+    LTEXT           "Outer Layer",IDC_STATIC_B5,26,80,39,8
+    LTEXT           "Inner Layer",IDC_STATIC_B7,27,109,38,8
+    LTEXT           "Middle Layer",IDC_STATIC_B6,26,95,43,8
+    CTEXT           "Effect of surface texture is not included in external reflectance calculation for coated surfaces.",
+                    IDC_STATIC_B8,15,125,166,16
+    LTEXT           "(No file selected)",IDC_FILENAME,66,165,117,10
+    EDITTEXT        IDC_FIXED,53,15,40,12,ES_AUTOHSCROLL
+END
+
+IDD_CIRCUIT DIALOG DISCARDABLE  30, 30, 227, 157
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "               ",IDC_STATIC,7,4,212,108
+    GROUPBOX        "                 ",IDC_STATIC,7,116,212,36
+    CONTROL         "&Source",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,13,3,43,10
+    CONTROL         "E&xternal",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,12,
+                    115,47,10
+    EDITTEXT        IDC_RSS,13,36,42,13,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "ohm-cm2",IDC_OHMCM2_SS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,59,32,49,10
+    CONTROL         "ohms",IDC_OHMS_SS,"Button",BS_AUTORADIOBUTTON,59,46,40,
+                    10
+    EDITTEXT        IDC_VSS,154,35,42,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_RTR,12,85,42,13,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "ohm-cm2",IDC_OHMCM2_TR,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,58,80,49,10
+    CONTROL         "ohms",IDC_OHMS_TR,"Button",BS_AUTORADIOBUTTON,58,93,38,
+                    10
+    EDITTEXT        IDC_VTR1,155,76,42,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_VTR2,155,93,42,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Open",IDC_OPEN,11,130,50,14,WS_GROUP
+    LTEXT           "(No file selected)",IDC_FILENAME,67,133,147,13,NOT 
+                    WS_GROUP
+    LTEXT           "Resistance",IDC_STATIC1,14,25,38,8
+    LTEXT           "volts",IDC_STATIC3,199,37,16,8
+    LTEXT           "Voltage",IDC_STATIC2,125,36,26,8
+    LTEXT           "volts",IDC_STATIC_B4,199,79,16,8
+    LTEXT           "volts",IDC_STATIC_B5,199,95,16,8
+    LTEXT           "Initial Voltage",IDC_STATIC_B2,107,78,46,8
+    LTEXT           "Final Voltage",IDC_STATIC_B3,107,95,44,8
+    LTEXT           "Resistance",IDC_STATIC_B1,13,74,38,8
+    LTEXT           "...Steady State...",IDC_STATIC4,87,15,61,8
+    LTEXT           "...Transient...",IDC_STATIC_B6,93,60,46,8
+END
+
+IDD_CONTACT DIALOG DISCARDABLE  30, 30, 219, 104
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Contact Definition"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,51,84,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,84,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_RESISTANCE,78,25,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION,148,25,42,13,ES_AUTOHSCROLL
+    CONTROL         "Emitter contact",IDC_EMITTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,25,61,10
+    LTEXT           "um",IDC_STATIC,193,27,12,8
+    LTEXT           "ohms",IDC_STATIC,122,28,19,8
+    LTEXT           "Distance from front surface",IDC_STATIC,148,4,47,16
+    LTEXT           "Internal series resistance",IDC_STATIC,81,4,47,16
+    CONTROL         "Base contact",IDC_BASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,6,42,54,10
+    EDITTEXT        IDC_RESISTANCE2,78,41,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION2,148,41,42,13,ES_AUTOHSCROLL
+    LTEXT           "um",IDC_STATIC,193,44,12,8
+    LTEXT           "ohms",IDC_STATIC,122,44,19,8
+    CONTROL         "Collector contact",IDC_COLLECTOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,59,67,10
+    EDITTEXT        IDC_RESISTANCE3,78,58,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION3,148,58,42,13,ES_AUTOHSCROLL
+    LTEXT           "um",IDC_STATIC,193,60,12,8
+    LTEXT           "ohms",IDC_STATIC,122,61,19,8
+END
+
+IDD_MATRECOMB DIALOG DISCARDABLE  30, 30, 205, 233
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Recombination Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,18,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,35,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_CN,42,20,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CP,42,34,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CNP,42,49,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BB,112,72,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BULKNREFN,58,102,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BULKNALPHAN,147,102,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BULKNREFP,58,120,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BULKNALPHAP,147,120,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFNREFN,58,155,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFNALPHAN,149,155,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFNREFP,59,172,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFNALPHAP,149,172,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BULKTALPHA,42,208,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFTALPHA,138,208,40,13,ES_AUTOHSCROLL
+    GROUPBOX        "Auger Coefficients",IDC_STATIC,3,4,105,62
+    RTEXT           "n-type",IDC_STATIC,5,21,36,8
+    RTEXT           "p-type",IDC_STATIC,5,36,36,8
+    RTEXT           "high-inject",IDC_STATIC,5,52,36,8
+    LTEXT           "cm6/s",IDC_STATIC,85,21,22,8
+    LTEXT           "cm6/s",IDC_STATIC,85,36,22,8
+    LTEXT           "cm6/s",IDC_STATIC,85,52,22,8
+    RTEXT           "Band-to-Band Coefficient",IDC_STATIC,11,74,97,8
+    LTEXT           "cm3/s",IDC_STATIC,158,74,23,8
+    GROUPBOX        "Bulk Doping Influence",IDC_STATIC,5,87,194,53
+    GROUPBOX        "Temperature Influence Exponent",IDC_STATIC,5,193,194,33
+    RTEXT           "alpha",IDC_STATIC,122,104,21,8
+    RTEXT           "N-type onset",IDC_STATIC,9,104,46,8
+    RTEXT           "P-type onset",IDC_STATIC,9,121,46,8
+    LTEXT           "cm-3",IDC_STATIC,102,104,20,8
+    LTEXT           "cm-3",IDC_STATIC,102,122,18,8
+    RTEXT           "alpha",IDC_STATIC,122,122,22,8
+    GROUPBOX        "Surface Doping Influence",IDC_STATIC,5,144,194,45
+    RTEXT           "alpha",IDC_STATIC,122,157,21,8
+    RTEXT           "N-type onset",IDC_STATIC,9,157,46,8
+    RTEXT           "P-type onset",IDC_STATIC,9,174,46,8
+    LTEXT           "cm-3",IDC_STATIC,102,157,20,8
+    LTEXT           "cm-3",IDC_STATIC,102,174,18,8
+    RTEXT           "alpha",IDC_STATIC,122,174,22,8
+    RTEXT           "Tau",IDC_STATIC,9,210,30,8
+    RTEXT           "S",IDC_STATIC,105,210,30,8
+END
+
+IDD_PARASITICS DIALOG DISCARDABLE  30, 30, 188, 195
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Free-Carrier Absorption"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Enable",IDC_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,76,11,35,10
+    EDITTEXT        IDC_NCOEFF,33,47,40,13,ES_AUTOHSCROLL
+    LTEXT           "l",IDC_STATICGREEK1,82,43,6,13
+    LTEXT           "l",IDC_STATICGREEK2,160,43,8,14
+    EDITTEXT        IDC_NLAMBDAPOWER,88,41,13,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PCOEFF,111,47,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLAMBDAPOWER,166,41,13,12,ES_AUTOHSCROLL
+    LTEXT           "n·",IDC_STATIC3,76,50,5,8
+    LTEXT           "p·",IDC_STATIC4,154,49,7,8
+    RTEXT           "Alpha =",IDC_STATIC1,6,50,25,8
+    RTEXT           "+",IDC_STATIC2,103,49,5,8
+END
+
+IDD_MATRECOM_AUGER DIALOG DISCARDABLE  0, 0, 167, 93
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Auger, Band-to-Band"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CN,42,19,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CP,42,33,42,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CNP,42,47,42,13,ES_AUTOHSCROLL
+    RTEXT           "n-type",IDC_STATIC,5,20,36,8
+    RTEXT           "p-type",IDC_STATIC,5,35,36,8
+    RTEXT           "high-inject",IDC_STATIC,5,49,36,8
+    LTEXT           "cm6/s",IDC_STATIC,85,20,22,8
+    LTEXT           "cm6/s",IDC_STATIC,85,35,22,8
+    LTEXT           "cm6/s",IDC_STATIC,85,49,22,8
+    EDITTEXT        IDC_BB,88,74,42,13,ES_AUTOHSCROLL
+    RTEXT           "Band-to-Band Coefficient",IDC_STATIC,6,76,78,8
+    LTEXT           "cm3/s",IDC_STATIC,134,76,23,8
+    LTEXT           "Auger Coefficients",IDC_STATIC,29,5,64,8
+END
+
+IDD_MATRECOM_DOPING DIALOG DISCARDABLE  0, 0, 193, 110
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Doping"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_BULKNREFN,53,20,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BULKNALPHAN,145,20,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BULKNREFP,53,35,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BULKNALPHAP,145,35,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFNREFN,54,73,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFNALPHAN,145,73,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFNREFP,54,88,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFNALPHAP,145,88,40,13,ES_AUTOHSCROLL
+    RTEXT           "alpha",IDC_STATIC,123,22,19,8
+    RTEXT           "N-type onset",IDC_STATIC,9,22,41,8
+    RTEXT           "P-type onset",IDC_STATIC,9,36,41,8
+    LTEXT           "cm-3",IDC_STATIC,95,22,16,8
+    LTEXT           "cm-3",IDC_STATIC,95,37,16,8
+    RTEXT           "alpha",IDC_STATIC,123,37,19,8
+    RTEXT           "alpha",IDC_STATIC,123,75,19,8
+    RTEXT           "N-type onset",IDC_STATIC,9,75,41,8
+    RTEXT           "P-type onset",IDC_STATIC,10,90,40,8
+    LTEXT           "cm-3",IDC_STATIC,97,75,16,8
+    LTEXT           "cm-3",IDC_STATIC,97,90,16,8
+    RTEXT           "alpha",IDC_STATIC,123,90,19,8
+    LTEXT           "Bulk Doping Influence",IDC_STATIC,62,4,75,8
+    LTEXT           "Surface Doping Influence",IDC_STATIC,57,57,88,8
+END
+
+IDD_MATRECOM_TEMP DIALOG DISCARDABLE  0, 0, 186, 92
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Temp."
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_BULKTALPHA,42,18,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURFTALPHA,42,35,40,13,ES_AUTOHSCROLL
+    RTEXT           "Tau",IDC_STATIC,9,20,30,8
+    RTEXT           "S",IDC_STATIC,9,37,30,8
+    LTEXT           "Temperature Influence Exponent",IDC_STATIC,8,6,110,8
+END
+
+IDD_MATRECOM_HURX DIALOG DISCARDABLE  0, 0, 186, 92
+STYLE WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Field enhanced"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FGAMMA,48,40,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PREFACTOR,48,63,40,13,ES_AUTOHSCROLL
+    LTEXT           "F",IDC_STATIC,19,41,5,8
+    LTEXT           "gamma",IDC_STATIC,24,44,24,8
+    LTEXT           "V/cm at 300K",IDC_STATIC,90,42,50,8
+    LTEXT           "Hurkx Model",IDC_STATIC,51,6,48,8
+    LTEXT           "Prefactor",IDC_STATIC,17,65,29,8
+    CONTROL         "Enable",IDC_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,50,22,38,10
+END
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 185, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,128,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,128,24,50,14
+    EDITTEXT        IDC_SCILOWER,59,31,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCIUPPER,59,48,40,14,ES_AUTOHSCROLL
+    LTEXT           "Display numbers in scientific notation if outside the range",
+                    IDC_STATIC,9,10,114,18
+    LTEXT           "Lower limit:",IDC_STATIC,17,34,36,8
+    LTEXT           "Upper limit:",IDC_STATIC,17,49,36,8
+END
+
+IDD_QUICKBATCH DIALOG DISCARDABLE  0, 0, 362, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Quick Batch"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,305,7,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,305,24,50,14
+    COMBOBOX        IDC_PARM1,13,93,63,88,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Parameter",IDC_STATIC,27,82,33,8
+    LTEXT           "Region",IDC_STATIC,77,82,24,8
+    EDITTEXT        IDC_FROM1,121,93,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TO1,166,93,40,14,ES_AUTOHSCROLL
+    LTEXT           "to",IDC_STATIC,178,82,8,8
+    CONTROL         "Log",IDC_LOG1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,
+                    96,28,10
+    LTEXT           "From",IDC_STATIC,129,82,16,8
+    LTEXT           "--- What to vary ---",IDC_STATIC,34,71,58,8
+    LTEXT           "--- How to vary ---",IDC_STATIC,143,71,55,8
+    EDITTEXT        IDC_STEPS1,269,93,40,14,ES_AUTOHSCROLL
+    LTEXT           "No. of steps",IDC_STATIC,269,82,39,8
+    LTEXT           "log or linear",IDC_STATIC,238,77,22,17
+    COMBOBOX        IDC_PARM2,13,112,63,88,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FROM2,121,112,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TO2,166,112,40,14,ES_AUTOHSCROLL
+    CONTROL         "Log",IDC_LOG2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,
+                    114,28,10
+    EDITTEXT        IDC_STEPS2,269,112,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PARM3,13,130,63,88,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FROM3,121,130,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TO3,166,130,40,14,ES_AUTOHSCROLL
+    CONTROL         "Log",IDC_LOG3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,
+                    133,28,10
+    EDITTEXT        IDC_STEPS3,269,130,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_PARM4,13,148,63,88,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FROM4,121,149,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TO4,166,149,40,14,ES_AUTOHSCROLL
+    CONTROL         "Log",IDC_LOG4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,
+                    149,28,10
+    EDITTEXT        IDC_STEPS4,269,149,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_OUTPUT1,15,184,61,54,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "--- Output parameters ---",IDC_STATIC,119,168,75,8
+    COMBOBOX        IDC_OUTPUT2,89,184,61,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_OUTPUT3,163,184,61,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_REG1,84,93,14,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REG2,84,112,14,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REG3,84,130,14,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REG4,84,149,14,14,ES_AUTOHSCROLL
+    CONTROL         "Permute",IDC_SAME1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,312,107,42,10
+    CONTROL         "Permute",IDC_SAME2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,312,124,42,10
+    CONTROL         "Permute",IDC_SAME3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,312,143,42,10
+    COMBOBOX        IDC_OUTPUT4,237,184,61,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Units",IDC_UNITS1,209,97,25,8
+    LTEXT           "Units",IDC_UNITS2,209,114,25,8
+    LTEXT           "Units",IDC_UNITS3,210,133,25,8
+    LTEXT           "Units",IDC_UNITS4,209,152,25,8
+    LTEXT           "Long description of the currently selected parameter",
+                    IDC_DESCRIPTION,7,208,348,8
+    GROUPBOX        "                          ",IDC_STATIC,7,60,348,145
+    GROUPBOX        "                                ",IDC_STATIC,7,22,280,
+                    33
+    PUSHBUTTON      "&Open",IDC_OPEN,21,34,50,14
+    LTEXT           "(No file selected)",IDC_FILENAME,79,37,195,8
+    CONTROL         "&Disable batch mode",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,15,7,79,10
+    CONTROL         "Obtain batch parameters from external &file",IDC_RADIO2,
+                    "Button",BS_AUTORADIOBUTTON,15,22,147,10
+    CONTROL         "&Quick Batch",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,15,
+                    60,55,10
+    LTEXT           "--- Which combinations ---",IDC_STATIC,264,71,81,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 221
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_QUICKBATCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_DEVICE_REFLECTANCE
+    BUTTON      ID_REGION_NEXT
+    BUTTON      ID_DEVICE_DOPING_DIFFUSIONS_FIRSTFRONT
+    BUTTON      ID_DEVICE_DOPING_DIFFUSIONS_FIRSTREAR
+    BUTTON      ID_DEVICE_RECOMBINATION_BULK
+    BUTTON      ID_DEVICE_RECOMBINATION_FRONTSURFACE
+    BUTTON      ID_DEVICE_RECOMBINATION_REARSURFACE
+    SEPARATOR
+    BUTTON      ID_EXCITATION_OPEN
+    SEPARATOR
+    BUTTON      ID_COMPUTE_RUN
+    BUTTON      ID_COMPUTE_SINGLESTEP
+    BUTTON      ID_COMPUTE_QUICKBATCH
+    SEPARATOR
+    BUTTON      ID_VIEW_PARAMETERS
+    BUTTON      ID_VIEW_FOURGRAPHS
+    BUTTON      ID_VIEW_INTERACTIVEGRAPH
+    SEPARATOR
+    BUTTON      ID_HELP_INDEX
+    BUTTON      ID_CONTEXT_HELP
+    SEPARATOR
+    BUTTON      ID_DUD_BUTTON1
+    BUTTON      ID_DUD_BUTTON2
+    BUTTON      ID_DUD_BUTTON3
+    BUTTON      ID_DUD_BUTTON4
+    BUTTON      ID_DUD_BUTTON5
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_MAGNIFYCURSOR       CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "PC1D for Windows\nNew Parameters\nPC1D Document\nPC1D Files (*.prm)\n.prm\nPC1D.Document\nPC1D Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PC1D for Windows"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_STATE      "Steady"
+    ID_INDICATOR_MODE       "0000"
+    ID_INDICATOR_TIME       "000"
+    ID_INDICATOR_PROGRESS   "||||||||||||||||||||||||||||||||||||||||"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new set of parameters\nNew"
+    ID_FILE_OPEN            "Open an existing parameter file\nOpen"
+    ID_FILE_CLOSE           "Exit PC1D"
+    ID_FILE_SAVE            "Save the current parameters under the same name\nSave"
+    ID_FILE_SAVE_AS         "Save the current parameters with a new name"
+    ID_FILE_PAGE_SETUP      "Change the printing options"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options"
+    ID_FILE_PRINT           "Print the current window\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program version number and copyright"
+    ID_APP_EXIT             "Quit the application; prompts to save device"
+    ID_HELP_INDEX           "List Help topics\nHelp"
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nContext-sensitive Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this set of parameters"
+    ID_FILE_MRU_FILE2       "Open this set of parameters"
+    ID_FILE_MRU_FILE3       "Open this set of parameters"
+    ID_FILE_MRU_FILE4       "Open this set of parameters"
+    ID_FILE_MRU_FILE5       "Open this set of parameters"
+    ID_FILE_MRU_FILE6       "Open this set of parameters"
+    ID_FILE_MRU_FILE7       "Open this set of parameters"
+    ID_FILE_MRU_FILE8       "Open this set of parameters"
+    ID_FILE_MRU_FILE9       "Open this set of parameters"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane"
+    ID_PREV_PANE            "Switch back to the previous window pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection"
+    ID_EDIT_CLEAR_ALL       "Erase everything"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy All"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard"
+    ID_EDIT_FIND            "Find the specified text"
+    ID_EDIT_PASTE           "Insert Clipboard contents"
+    ID_EDIT_REPEAT          "Repeat the last action"
+    ID_EDIT_REPLACE         "Replace specific text with different text"
+    ID_EDIT_SELECT_ALL      "Select the entire document"
+    ID_EDIT_UNDO            "Undo the last action"
+    ID_EDIT_REDO            "Redo the previously undone action"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_PARAMETERS      "Display parameters for the current region\nParameter View"
+    ID_VIEW_INTERACTIVEGRAPH 
+                            "Displays a graph which you can interact with\nInteractive Graph View"
+    ID_VIEW_FOURGRAPHS      "Fill the window with four graphs\nFour Graphs View"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_FRONTSURFACECHARGE  "Front Surface"
+    IDS_REARSURFACECHARGE   "Rear Surface"
+    IDS_FRONTREFL           "Front External"
+    IDS_REARREFL            "Rear External"
+    IDS_BASECIRCUIT         "Base Circuit"
+    IDS_COLLECTORCIRCUIT    "Collector Circuit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COMPUTE_RUN          "Solve the current problem\nRun"
+    ID_COMPUTE_NUMERICAL    "Adjust the numerical method parameters"
+    ID_COMPUTE_STOP         "Stop calculation of the current problem"
+    ID_COMPUTE_SINGLESTEP   "Do the next step in the solution of the current problem\nSingle Step"
+    ID_COMPUTE_CONTINUE     "Continue calculation from where it was stopped"
+    ID_COMPUTE_STARTAGAIN   "Restart the calculation from the beginning"
+    ID_COMPUTE_BATCH        "Solve a batch of problems from an external file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEVICE_TEMPERATURE   "Select the device temperature"
+    ID_DEVICE_AREA          "Define the area of the device"
+    ID_DEVICE_THICKNESS     "Define the thickness of this region"
+    ID_DEVICE_MATERIAL      "Define the material in each device region"
+    ID_DEVICE_DOPING        "Adjust the doping densities in each device region"
+    ID_DEVICE_SURFACES      "Define the electrostatic surface conditions"
+    ID_DEVICE_CIRCUIT       "Circuit element descriptions and contact locations"
+    ID_DEVICE_REFLECTANCE   "Adjust the external and internal optical reflectance\nReflectance"
+    ID_EXCITATION_NEW       "Reset excitation to default values"
+    ID_EXCITATION_SAVEAS    "Save the current excitation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EXCITATION_OPEN      "Select a file defining the excitation\nExcitation File"
+    ID_OPTIONS_FILELOCATIONS "Choose where to store your data files"
+    ID_MATERIAL_NEW         "Reset material properties to defaults"
+    ID_MATERIAL_OPEN        "Choose a file containing material properties"
+    ID_MATERIAL_SAVEAS      "Save the current material properties"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEVICE_SELECT_1      "Select region  1"
+    ID_DEVICE_SELECT_2      "Select region 2"
+    ID_DEVICE_SELECT_3      "Select region 3"
+    ID_DEVICE_SELECT_4      "Select region 4"
+    ID_DEVICE_SELECT_5      "Select region 5"
+    ID_DEVICE_INSERT_1      "Insert new region 1"
+    ID_DEVICE_INSERT_2      "Insert new region 2"
+    ID_DEVICE_INSERT_3      "Insert new region 3"
+    ID_DEVICE_INSERT_4      "Insert new region 4"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEVICE_INSERT_5      "Insert new region 5"
+    ID_DEVICE_REMOVE_1      "Remove region 1"
+    ID_DEVICE_REMOVE_2      "Remove region 2"
+    ID_DEVICE_REMOVE_3      "Remove region 3"
+    ID_DEVICE_REMOVE_4      "Remove region 4"
+    ID_DEVICE_REMOVE_5      "Remove region 5"
+    ID_EXC_TEMPERATURE      "Select the device temperature"
+    ID_DEVICE_NEW           "Reset device to default values"
+    ID_DEVICE_OPEN          "Choose a file defining the device"
+    ID_DEVICE_SAVEAS        "Save the current device"
+    ID_DEVICE_MATERIAL_MOBILITIES "Specify the mobility model parameters"
+    ID_DEVICE_MATERIAL_PERMITTIVITY "Specify the relative permittivity"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEVICE_MATERIAL_BANDSTRUCTURE 
+                            "Specify the electronic bandgap parameters"
+    ID_DEVICE_MATERIAL_BGNARROWING_MODEL "Specify BGN model parameters"
+    ID_DEVICE_TEXTURE       "Define texture for the front and rear surfaces"
+    ID_DEVICE_MATERIAL_MOBILITIES_FIXED "Specify fixed carrier mobilities"
+    ID_DEVICE_MATERIAL_MOBILITIES_VARIABLE "Specify a mobility model"
+    ID_DEVICE_DOPING_BACKGROUND 
+                            "Specify the background doping density\nBackground Doping"
+    ID_DEVICE_DOPING_DIFFUSIONS_FIRSTFRONT 
+                            "Specify the first front diffusion parameters\nFront Diffusion"
+    ID_DEVICE_DOPING_DIFFUSIONS_SECONDFRONT 
+                            "Specify the second front diffusion parameters"
+    ID_DEVICE_DOPING_DIFFUSIONS_FIRSTREAR 
+                            "Specify the first rear diffusion parameters\nRear Diffusion"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEVICE_DOPING_DIFFUSIONS_SECONDREAR 
+                            "Specify the second rear diffusion parameters"
+    ID_DEVICE_RECOMBINATION_BULK 
+                            "Specify the bulk recombination lifetimes\nBulk Lifetime"
+    ID_DEVICE_RECOMBINATION_FRONTSURFACE 
+                            "Specify the front-surface recombination model\nFront Surface Recombination"
+    ID_DEVICE_RECOMBINATION_REARSURFACE 
+                            "Specify the rear-surface recombination model\nRear Surface Recombination"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEVICE_CIRCUIT_INTERNALELEMENTS 
+                            "Specify internal shunt element values and location"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEVICE_DOPING_FRONT_EXTERNAL 
+                            "Specify a external file for the front doping profile"
+    ID_DEVICE_DOPING_REAR_EXTERNAL 
+                            "Specify a external file for the rear doping profile"
+    ID_OPTIONS_DEVICEUPDATE "Show changes to device structure"
+    ID_OPTIONS_STORENODEDATA 
+                            "Specify whether to store node data with the parameters"
+    ID_GRAPH_DEFINED        "Define your own graph"
+    ID_GRAPH_SPATIAL_DOPINGDENSITIES "Display  doping densities"
+    ID_GRAPH_SPATIAL_CARRIERDENSITIES "Display carrier densities"
+    ID_GRAPH_SPATIAL_ELECTROSTATICPOTENTIAL "Display electrostatic potential"
+    ID_GRAPH_SPATIAL_ELECTRICFIELD "Display electric field"
+    ID_GRAPH_SPATIAL_CHARGEDENSITY "Display charge density"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRAPH_SPATIAL_CURRENTDENSITY "Display current density"
+    ID_GRAPH_SPATIAL_PHOTOGENERATION 
+                            "Display cumulative generation & recombination"
+    ID_FILE_DESCRIPTION     "Supply a text description of this problem"
+    ID_GRAPH_SPATIAL_CARRIERMOBILITIES "Display electron & hole mobility"
+    ID_GRAPH_SPATIAL_ENERGYBANDS "Display the energy bands and Fermi levels"
+    ID_GRAPH_SPATIAL_CARRIERVELOCITIES "Display the carrier velocities"
+    ID_GRAPH_AUX            "Set auxiliary graph specifications"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRAPH_DEFAULTGRAPHS  "Display the default graphs"
+    ID_EXC_MODE             "Specify the excitation condition to be solved"
+    ID_DEVICE_MATERIAL_REFRACTIVEINDEX 
+                            "Specify the index of refraction for this region"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEVICE_CIRCUIT_CONTACTS 
+                            "Specify location of emitter, base & collector contacts"
+    ID_REGION_NEXT          "Select the next region\nCurrent Region"
+    ID_DEVICE_MATERIAL_RECOMBINATION 
+                            "Specify material-specific recombination parameters"
+    ID_GRAPH_SPATIAL_DIFFUSIONLENGTH "Display a graph of the diffusion length"
+    ID_MATERIAL_PARASITICS  "Specify free-carrier absorption parameters"
+    ID_MATERIAL_INTRINSIC   "Specify an absorption coefficient model or file"
+    ID_EXC_PHOTO_PRI        "Specify the primary illumination intensity and spectral irradiance"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EXC_PHOTO_SEC        "Specify the secondary illumination intensity and spectral irradiance"
+    ID_EXC_PHOTO_EXTERNAL   "Choose a file containing photogeneration data"
+    ID_DEVICE_RECOMB        "Specify the bulk, front- and rear-surface recombination models"
+    ID_MATERIAL_OPTICAL     "Specify material optical properties (absorption and refractive index)"
+    ID_GRAPH_EXPERIMENTAL   "Specify the experimental data file graph specifications"
+    ID_SELECTPARMFONT       "Select the font to be used by the Parameter View"
+    ID_OPTIONS_DISPLAY      "Change the way in which numbers are displayed"
+    ID_COMPUTE_QUICKBATCH   "Solve a batch of problems\nBatch"
+    ID_HACK_TERESAEVA       "xxx"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTIONS_AUTOSCALEHISTORYGRAPHS 
+                            "Prevent autoscaling when viewing History graphs (PgUp/PgDn)"
+    ID_GRAPH_HISTORYPREVIOUS "Display the graph from the previous simulation"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRAPH_HISTORYNEXT    "Display the graph from the next simulation"
+    ID_GRAPH_HISTORYRESET   "Remove all history graphs"
+END
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\pc1d.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  	// Standard components
+#include "afxprint.rc"	// printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

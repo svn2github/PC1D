@@ -1,0 +1,226 @@
+PC1D Windows Version 4.0 -> 5.9
+---------
+ History
+---------
+PC-1D was originally written by Paul Basore for the original IBM PC. Development began around 1982.
+It was one of the earliest programs to make use of the 8087 math coprocessor, which at that time was
+only available by mail order.
+The last MS-DOS version of PC-1D was 3.6. It was written in Turbo Pascal, with some asm.
+Paul Basore converted the code to C++ and Windows 3.1 in 1995; by November 1995, it was able
+to run most simulations, but had an extremely clumsy UI, and many bugs.
+Don Clugston did the majority of the coding from Nov 1996 onwards.
+PC1D for Windows version 4.0 was written by released on 28/5/96. It was compiled using MSVC 1.5.
+PC1D for Windows95, version 5.0 was released on 8/9/97.
+--------------
+ Optimisation
+--------------
+Considerable effort was invested into improving the simulation speed.
+
+Using the PVCELL/Longbat simulation, on the same computer:
+Version Time(seconds)
+3.6     1100   1.0x
+4.6     330    3.3x
+5.0     180    6.1x
+5.1     119    9.2x
+5.3     70    15.7x
+
+-----------------------------------
+ Changelog (selected entries only)
+-----------------------------------
+
+Changelog entries from Paul Basore are listed here, since they frequently contain
+explanations of the device physics.
+
+***************************
+8/9/97 RELEASE VERSION 5.0
+***************************
+
+Mon 1/9/97
+PAB: Changed changeover for ARC calculations from two wavelengths to five wavelengths.
+
+Mon 19/5/97
+PAB: Discovered bug in Prepare.cpp code when ni is small. I had clamped normalised
+internal resistance from being less than SMALL_REAL (1E-20). But when ni is quite
+small, this can represent quite a large series resistance. For example, if ni is
+equal to 1E-4 at 300K, a normalised resistance of SMALL_REAL corresponds to an actual
+series resistance of 16 ohms! I removed the SMALL_REAL limit, and rely now on
+the dialog box to prevent the actual resistance from being set to zero.
+
+=====================================================
+Mon 28/10/96 RELEASE VERSION 4.3
+=====================================================
+
+Mon 21/10/96
+PAB: I have completed total velocity saturation. It is implemented as an 
+"outside loop" in that the mobilities are adjusted based on the solution 
+only when the solution is completely converged. After adjustment, the 
+solution must converge again before any further adjustment to the mobilities
+is made. This can significantly increase the time required to solve the 
+problem, so I have this feature set up as an option in the Numeric Dialog
+which is normally not enabled. The value of this check box is stored in the
+PRM file with the other numeric parameters, using the WORD slot once used
+for NewSolve and now filled with a dummy value. Note that I may yet find a way
+to implement total velocity saturation within the loop, but nothing I've tried
+yet has worked very well, and at least this new method has robust convergence.
+So, let's go with this approach at least for the time being. 
+
+Mon 25/9/96
+PAB: Changed default value of Nc_Nv ratio to 1.06 based on data from Alistair
+using arguments presented by MAG in his study of intrinsic concentration. Also,
+set default doping and temperature effects on lifetime to zero, to reduce 
+confusion. ***These changes need to be ported to Si.MAT prior to release***
+
+Wed 18/9/96
+PAB: Worked more on VelSat. I tried to change the expression to approximate
+the gradient at a node using (PhiR-PhiL)/(xR-xL) instead of (PhiR-PhiC)/(xR-xC).
+This introduces some new derivative terms into the Jacobian that weren't there 
+before. It didn't work on first try, so I've disabled VelSat until I can debug
+it. I also went ahead and deleted the "NewSolve" code from SOLVE.CPP since it
+is now quite clear that we won't be going back to it.
+
+Wed 11/9/96
+PAB: I've decided to try an approach which will give only approximate velocity 
+saturation (it may overshoot in some areas) but for which I can include a
+rigorous and exact treatment of the Jacobian terms. For this, I will approximate
+the gradient in phi as delta-phi/delta-x within each element. 
+PAB: It seems to work pretty well! I'll leave it engaged, so let me know if
+it causes converge trouble. You can turn it off by setting the saturation
+velocities to zero in the mobility model. The accuracy with which it keeps
+the velocity below the limit improves as the number of elements goes up.
+
+Mon 9/9/96
+PAB: After many hours attacking velocity saturation, I have come to the
+conclusion that the conceptual approach to this issue of treating it as an
+adjustment of the mobility is not a suitable means of obtaining robust
+convergence. The problem is that the mobility is tightly linked to the carrier
+density when the total current is constrained (as is the case for any device
+in which photogeneration dominates). So, while I was able to get good
+convergence for dark-bias problems, I wasn't able to make it work for the
+PVCELL problem even after trying many different approaches. If I am going
+to progress this issue, I'll have to think of a different conceptual approach.
+
+Mon 2/9/96
+PAB: Managed to obtain convergence to correct results with velocity sat, but
+convergence is too slow. I don't yet have the Jacobian terms included, however,
+so there is hope for improvement. I left the code with VelSat disabled.
+Fixed bug in LoadOpticParms() - error in cosTheta1 which was causing textured
+ front surfaces to have ~half current.
+
+Wed 28/8/96
+PAB: Worked some more on velocity saturation. It's a tough problem, but I'm
+ making some progress. I am working on the approach of rigorously treating the
+ effect as a reduction in mobility, with all of the attendant ramifications.
+
+Mon 26/8/96
+PAB: I worked more on velocity saturation. I was able (finally) to get it to
+ converge for PVCELL, but I don't like what it converges to. It has oscillations
+ in the velocity-limiting area, and worst of all, the velocity is not limited
+ to the value specified. Clearly, I need to work on it some more!
+
+Mon 12/8/96
+PAB: I increased the number of time steps allowed to 200. This is the 
+largest round number that doesn't cause the Excite class to exceed 64kB.
+I worked on implementing velocity saturation using Phi instead of Psi. I
+had some success, but the bugs aren't ironed out yet. I have disabled all
+velocity saturation features for the time being while I work on it.
+
+--------------------------------------------------------------------------------
+**** RELEASE VERSION 4.2 ****
+--------------------------------------------------------------------------------
+
+Mon 22/7/96
+PAB: I did detailed timing tests to compare Version 3, Version 4 (phi) and Version
+4' (phi-psi). I used 3 sample problems: PVCELL, NPDIODE (10 V reverse bias), and BJT.
+I tried each one with 100-120 nodes and with 450-500 nodes. I examined both with
+and without dynamic renoding. In each case, I found the Clamp value that resulted 
+in the fastest solution. Here are the results (times in seconds). "--" means that
+convergence could not be obtained for any value of the clamp. All times were the
+same with dynamic renoding to within 5% except for the BJT with maximum nodes, in
+which case the line indicated with an asterisk denotes the results with renoding.
+                         VERSION 3		 VERSION 4		 VERSION 4'
+PROBLEM		ELEMENTS	CLAMP	TIME    CLAMP	TIME	CLAMP	TIME
+PVCELL		113			10		5		10		5		10		5
+			496			10		17		10		17		10		17
+NPDIODE		117			10		2		--      --      --      --
+			467			12		7		0.2		269		0.2		252
+BJT			117			7		34		--		--		--		--
+			453			7		109		0.2		485		0.2		454
+			453*		10		112		1		171		0.8		196
+From these results I conclude that Version 3 is clearly superior when there is a
+reverse-biased junction, and in no case are the other versions better. Dynamic renoding
+never hurts much, and can prove quite helpful in selected cases. The only difference
+between Version 4 and Version 4' is when dynamic renoding is enabled, in which case
+there is a preference for Version 4. Also considering Don's recent results, I have
+make Version 3 the new default, with a clamp of 5 and dynamic renoding enabled (whenever 
+the renode check box for that state is enabled). I will retain Version 4 code in 
+SOLVE.CPP for now, but it will not be user-accessible. I updated the Help file to 
+reflect these changes. 
+
+Thurs 18/7/96
+PAB: Worked on SOLVE.CPP. NewSolve now uses phi' = phi - psi as the solution
+variables for the matrix (old Solve is stored as SOLVE.BAK). It may work
+better than the prior Version 4 equations, but it still doesn't seem to be
+as robust in reverse bias as the Version 3 equations. It would be nice to 
+know if there are ANY cases that converge now in Version 4 that didn't with
+Version 3. 
+
+Mon 15/7/96
+PAB: I worked all morning trying to understand why the Ver 4 equations should
+behave less well than the Ver 3 equations. I found that the Ver 3 equations in
+cases where phi and psi change rapidly across an element tend to place a much 
+greater emphasis on the "high" side of the element, whereas Ver 4 tends to 
+treat the two sides more balanced. I would have thought the latter would be
+better, but perhaps this balanced treatment means that the equations are less
+likely to discourage the development of rapid changes in the first place. It was
+interesting to note that the sum of the derivatives with respect to the centre 
+and right nodes were the same for both Versions, even though the split between
+the two derivatives can be very much different.
+
+Mon 8/7/96
+PAB: I commented out all generation and recombination effects in the Solve 
+equations and found that the Ver 4 equations still have notably worse converge
+properties than the Ver 3 equations. From this I conclude that while there may
+be a problem with the gen/rec portion of the equations in Ver 4, it is not the 
+dominant convergence problem. I also proved on paper that the current continuity
+equations are identical in the two versions out to second-order terms in 
+delta-potentials, and the derivatives are all identical out to first-order terms.
+The origin of the problem does not, therefore, lie in regions of nearly-constant
+potential, because in those regions the two versions produce identical matrix
+entries. The problems must arise in more rapidly varying areas. Because of the
+agreement in the low-order terms, it is quite unlikely that there are any 
+missing terms or sign errors. Rather, there must be some terms that include 
+differences between large values, or otherwise have poor numerical behaviour.
+
+Mon 1/7/96
+--------------------------------------------------------------------------------
+**** RELEASE VERSION 4.1 ****
+--------------------------------------------------------------------------------
+
+Wed 26/6/96
+PAB: Modified Solve.cpp and Prepare.cpp so that when fixed mobility is selected,
+the saturation velocity limit is not imposed in the calculations. Also fixed
+the plots of mobility and diffusion length to reflect this change. 
+An Esat_n or Esat_p of 0 is used to mean that no limit is to be applied.
+ Changed the max_dx for renoding in charge-neutral regions from 1/20 of the
+width to 1/40 of the width. This is consistent with the larger number of nodes
+generally useable with Version 4, and may help convergence by reducing the
+discrepancy in node spacing between charged and charge-neutral regions.
+
+Mon 17/6/96
+PAB: I fixed the problem with coating reflectance. There was a mistake in
+converting the code from Pascal.
+Investigated manner in which velocity saturation is implemented. It still uses
+the E-field rather than the saturation velocity. Attempts to use velocity directly
+by using Phi's instead of Psi produced poor convergence. A sample of problems 
+seems to indicate that the use of Psi is a pretty good estimator anyway, since
+diffusion velocities rarely exceed the saturation limit anyway. I changed the
+plot of mobility to reflect the saturation effect.
+
+--------------------------------------------------------------------------------
+*** RELEASE VERSION 4.0  ****
+--------------------------------------------------------------------------------
+
+Mon 27/5/96
+PAB:
+Modified method for calculating minority lifetime and diffusion length so that it
+computes for the minority carrier at current conditions, rather than at equilibrium.
